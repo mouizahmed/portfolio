@@ -4,7 +4,7 @@ import { } from './components';
 import NotFoundPage from './pages/404';
 import Construction from './pages/Construction';
 
-import { BrowserRouter as Router, Route, Switch, Redirect, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 
 
 

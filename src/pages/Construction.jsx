@@ -44,7 +44,7 @@ const Construction = () => {
                     </a>
                     </Tooltip>
                 <Tooltip title="Resume">
-                <a href="">
+                <a href="https://www.mouizahmed.com/">
                     <FontAwesomeIcon icon={faFile} />
                 </a>
                 </Tooltip>
