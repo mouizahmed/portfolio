@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { } from './components';
-// import NotFoundPage from './pages/404';
+import NotFoundPage from './pages/404';
 import Construction from './pages/Construction';
 
 import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
@@ -23,7 +23,7 @@ class App extends React.Component {
                     <React.Fragment>
                         <Construction />
                     </React.Fragment>} />
-                    
+                    <Route component={NotFoundPage} />
                 </Switch>
             </Router>
         );
