@@ -23,7 +23,7 @@ class App extends React.Component {
                     <React.Fragment>
                         <Construction />
                     </React.Fragment>} />
-                    <Route component={NotFoundPage} />
+                    
                 </Switch>
             </Router>
         );
