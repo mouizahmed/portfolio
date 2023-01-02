@@ -3,51 +3,105 @@ import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
+import { useTheme } from 'next-themes' 
 
 const Navbar = () => {
 
 const [nav, setNav] = useState(false)
 const [shadow, setShadow] = useState(false)
+const { systemTheme, theme, setTheme } = useTheme()
+const [mounted, setMounted] = useState(false)
+
+const renderThemeChanger = () => {
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    if (!mounted) return null
+    if (currentTheme === 'dark') {
+        return (
+            <div className="bg-[#4B5563] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer" onClick={() => setTheme('light')}>
+                <BsFillSunFill className="w-4 h-4 fill-white" role="button" />
+            </div>
+        )
+    } else {
+        return (
+            <div className="bg-[#d5d5d1] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer" onClick={() => setTheme('dark')}>
+                <BsFillMoonFill className="w-4 h-4 fill-black" role="button" />
+            </div>
+        )
+    }
+}
+
+
+const logo = () => {
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    if (!mounted) return null
+    if (currentTheme === 'dark') {
+        return (
+            <Link href="/">
+            <div className="bg-[#4B5563] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer ml-7">
+                <Image src="/../public/whitelogo.png" alt="/" width='20' height='20' className="cursor-pointer fill-white"/>
+            </div>
+            </Link>
+        )
+    } else {
+        return (
+            <Link href="/">
+            <div className="bg-[#d5d5d1] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer ml-7">
+                <Image src="/../public/logo.png" alt="/" width='50' height='50' className="cursor-pointer "/>
+            </div>
+            </Link>
+        )
+    }
+}
+
+
+
 
 const handleNav = () => {
     setNav(!nav)
 }
 
 useEffect(() => {
-    const handleShadow = () => {
-        if (window.scrollY >= 90) {
-            setShadow(true)
-        } else {
-            setShadow(false)
-        }
-    }
-    window.addEventListener('scroll', handleShadow);
+    setMounted(true)
+
 }, [])
 
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-white top-0 px-[5%] md:px-[5%] lg:px-[5%] xl:px-[10%] 2xl:px-[12%]" : "fixed w-full h-20 z-[100] top-0 px-[5%] md:px-[5%] lg:px-[5%] xl:px-[10%] 2xl:px-[12%]"}>
-        <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16"> 
-            <Image src="/../public/logo.png" alt="/" width='50' height='50' />
-            <div>
-                <ul className="hidden md:flex px-2 items-center">
-                    <Link href="/">
-                        <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-                    </Link>
+    <div className="w-full flex flex-col">
+        <div className="">
+            <nav className="flex justify-between max-w-3xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
+                <div className="">
+                {logo()}
+                </div>
+                {/* <div className="w-[350px]">
+
+                </div> */}
+                
+
+               
+            
+            <div className="float-left">
+                <ul className="hidden md:flex px-7 items-center transition-all group-hover ">
+                
+                    
+                
+                
                     <Link href="/#about">
-                        <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+                        <li className="ml-5 text-sm uppercase hover:bg-[#d5d5d1] dark:hover:bg-[#1f2937] p-2 rounded-lg">About</li>
                     </Link>
                     <Link href="/#projects">
-                        <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
+                        <li className="ml-5 text-sm uppercase hover:bg-[#d5d5d1] dark:hover:bg-[#1f2937] p-2 rounded-lg">Projects</li>
                     </Link>
-                    <Link href="/">
-                        <li className="ml-10 text-sm uppercase bg-[#353535] hover:bg-[#98999a] text-white font-bold py-2 px-4 rounded-full">Contact</li>
-                    </Link>
+                    <li className="ml-5">{renderThemeChanger()}</li>
                 </ul>
-                <div onClick={handleNav} className="md:hidden">
+                
+                <div onClick={handleNav} className="md:hidden px-7">
                     <AiOutlineMenu size={25} />
+                    
                 </div>
             </div>
+            </nav>
         </div>
 
         <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}> 
@@ -91,7 +145,9 @@ useEffect(() => {
                         </div>
                     </div>
                 </div>
+                                
             </div>
+            
         </div>
 
 

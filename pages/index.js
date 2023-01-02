@@ -1,12 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar.jsx'
-import Main from '../components/Main.jsx'
-import About from '../components/About.jsx'
-import Projects from '../components/Projects.jsx'
+import Main from './Main.jsx'
+import { Poppins } from '@next/font/google';
 
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['200']
+})
 
 export default function Home() {
+
+  
+
   return (
     <div>
       <Head>
@@ -15,11 +21,10 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
 
-      <main>
+      <main className={poppins.className}>
         <Navbar />
         <Main />
-        <About />
-        <Projects />
+
         
       </main>
 
