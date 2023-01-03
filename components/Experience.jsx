@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 const Experience = () => {
   return (
     <div className="pl-5 pr-5 pt-5">
-                <h3 className="pb-5">Where I've been</h3>
+                <h3 className="pb-5">Where I&apos;ve been</h3>
                 <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="flex justify-center items-center">
                         <Image src="/../public/lassonde.png" alt="/" width='30' height='30' className="rounded-xl"/>

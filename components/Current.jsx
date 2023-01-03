@@ -24,7 +24,7 @@ const Current = () => {
                             <h3 className="text-[white]">Seeking Internship Positions </h3>
                             </Grid>
                             <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
-                            <p className="text-[white]">Front-End, Full Stack, Mobile Development, UI/UX Design </p>
+                            <p className="text-[white]">Front-End, Full Stack, Mobile Development, UI/UX Design, Database Management </p>
                             </Grid>
                         </Grid>
                     </Grid>

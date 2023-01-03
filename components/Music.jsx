@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 const Music = () => {
   return (
     <div className="pl-5 pr-5 pt-5 pb-5">
-        <h3>What I'm Listening To</h3>
+        <h3>What I&apos;m Listening To</h3>
         <div className="flex justify-center pt-5">
             <Card className="rounded-xl">
                 <CardContent>

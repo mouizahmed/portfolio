@@ -25,7 +25,7 @@ export default function Home() {
       <Head>
         <title>Mouiz Ahmed</title>
         <meta name="description" content="" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/header.png" />
       </Head>
 
       <main className={poppins.className}>
