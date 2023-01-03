@@ -1,8 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Navbar from '../components/Navbar.jsx'
-import Main from './Main.jsx'
+
 import { Poppins } from '@next/font/google';
+
+import Navbar from '../components/Navbar.jsx'
+import Music from '../components/Music.jsx'
+import Education from '../components/Education.jsx'
+import Experience from '../components/Experience.jsx'
+import Projects from '../components/Projects.jsx'
+import Current from '../components/Current.jsx'
+import About from '../components/About.jsx'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -23,7 +30,15 @@ export default function Home() {
 
       <main className={poppins.className}>
         <Navbar />
-        <Main />
+        {/* <Main /> */}
+        <div className="max-w-3xl h-full mx-auto p-3 flex flex-col mb-3">
+            <About />
+            <Current />
+            <Projects />
+            <Experience />
+            <Education />
+            {/* <Music /> */}
+        </div>
 
         
       </main>
