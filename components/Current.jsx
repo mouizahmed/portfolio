@@ -11,7 +11,7 @@ const Current = () => {
   return (
     <div className="pl-5 pr-5 pt-5">
         <h3 className="pb-5">Currently</h3>
-        <Card className="rounded-xl border-transparent border-2 hover:border-white" style={{ backgroundColor: "#4da64d" }}>
+        <Card className="rounded-xl border-transparent border-2 hover:border-white pr-5" style={{ backgroundColor: "#4da64d" }}>
             <CardContent>
             <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="flex justify-center items-center">

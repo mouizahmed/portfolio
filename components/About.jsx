@@ -32,7 +32,7 @@ const About = () => {
                     </div>
                     <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
                         <p className="">Hey 👋!</p>
-                        <p>I&apos;m a third-year Software Engineering Co-op student seeking Summer 2023 Internship Positions for Front-End, Full Stack, Mobile Development and UI/UX Design.</p>
+                        <p>I&apos;m a third-year Software Engineering Co-op student.</p>
                     </div>
                     <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
                         <p>Let&apos;s Connect!</p>

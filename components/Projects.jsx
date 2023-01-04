@@ -16,20 +16,20 @@ const Projects = () => {
                     <Grid container spacing={2} columns={{ xs: 2, sm: 2, md: 2, lg: 2, xl: 2}} className="">
                         <Grid item xs={2} sm={1} md={1} lg={1} xl={1} className="group">
                         <Link href="https://github.com/mouizahmed/course_reviews">
-                        <Card className="h-[600px] bg-[#fffff] bg-opacity-20 rounded-xl w-3xl cursor-pointer md:hover:shadow-2xl md:hover:scale-105 transition ease-out duration-300">
+                        <Card className="h-[625px] bg-[#fffff] bg-opacity-20 rounded-xl w-3xl cursor-pointer md:hover:shadow-2xl md:hover:scale-105 transition">
                             <CardContent className="p-0">
                                 <Grid container>
                                     <Grid item>
                                         <Image src="/placeholder.png" priority alt="/" width='400' height='400' className=""/>
                                     </Grid>
                                     <Grid item>
-                                        <h3 className="pt-5 pl-5">Course Reviews</h3>
+                                        <h3 className="text-xl pt-5 pl-5">Course Reviews</h3>
                                     </Grid>
                                     <Grid item>
-                                        <h3 className="pl-5 pr-5">MySQL • ExpressJS • ReactJS • NodeJS • MUI • Google Cloud Platform • JWT</h3>
+                                        <h3 className="pl-5 pr-5 pb-5">MySQL • ExpressJS • ReactJS • NodeJS • MUI • Google Cloud Platform • JWT • Cloudinary</h3>
                                     </Grid>
                                     <Grid item>
-                                        <p className="pl-5 pr-5">A web application that allows users to create course reviews for their respective post-secondary schools and ease their struggles within the course selection process.</p>
+                                        <p className="pl-5 pr-5 font-thick">A web application that allows users to create course reviews for their respective post-secondary schools and ease their struggles within the course selection process.</p>
                                     </Grid>
                                 </Grid>
                             </CardContent>
@@ -52,17 +52,17 @@ const Projects = () => {
                         </Grid>
                         <Grid item xs={2} sm={1} md={1} lg={1} xl={1} className="group">
                         <Link href="https://github.com/mouizahmed/ponderful">
-                        <Card className="h-[600px] bg-[#fffff] bg-opacity-20 rounded-xl w-3xl cursor-pointer md:hover:shadow-2xl md:hover:scale-105 transition ease-out duration-300">
+                        <Card className="h-[625px] bg-[#fffff] bg-opacity-20 rounded-xl w-3xl cursor-pointer md:hover:shadow-2xl md:hover:scale-105 transition">
                             <CardContent className="p-0">
                                     <Grid container>
                                         <Grid item>
                                             <Image src="/ponderful.png" priority alt="/" width='400' height='400' className=""/>
                                         </Grid>
                                         <Grid item>
-                                            <h3 className="pt-5 pl-5">ponderful.</h3>
+                                            <h3 className="text-xl pt-5 pl-5">ponderful.</h3>
                                         </Grid>
                                         <Grid>
-                                            <h3 className="pl-5">MongoDB • ExpressJS • ReactJS • NodeJS • MUI</h3>
+                                            <h3 className="pl-5 pr-5 pb-5">MongoDB • ExpressJS • ReactJS • NodeJS • MUI</h3>
                                         </Grid>
                                         <Grid>
                                             <p className="pl-5 pr-5">A web application that eases the struggles of making plans or group decisions with a large group of friends.</p>
