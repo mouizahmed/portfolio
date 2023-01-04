@@ -40,7 +40,7 @@ const logo = () => {
         return (
             <Link href="/">
             <div className="bg-[#4B5563] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer ml-7">
-                <Image src="/../public/whitelogo.png" alt="/" width='20' height='20' className="cursor-pointer fill-white"/>
+                <Image src="/whitelogo.png" alt="/" width='20' height='20' className="cursor-pointer fill-white"/>
             </div>
             </Link>
         )
@@ -48,7 +48,7 @@ const logo = () => {
         return (
             <Link href="/">
             <div className="bg-[#d5d5d1] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer ml-7">
-                <Image src="/../public/logo.png" alt="/" width='50' height='50' className="cursor-pointer "/>
+                <Image src="/logo.png" alt="/" width='50' height='50' className="cursor-pointer "/>
             </div>
             </Link>
         )
