@@ -20,7 +20,7 @@ const Projects = () => {
                             <CardContent className="p-0">
                                 <Grid container>
                                     <Grid item>
-                                        <Image src="/../public/placeholder.png" priority alt="/" width='400' height='400' className=""/>
+                                        <Image src="/placeholder.png" priority alt="/" width='400' height='400' className=""/>
                                     </Grid>
                                     <Grid item>
                                         <h3 className="pt-5 pl-5">Course Reviews</h3>
@@ -56,7 +56,7 @@ const Projects = () => {
                             <CardContent className="p-0">
                                     <Grid container>
                                         <Grid item>
-                                            <Image src="/../public/ponderful.png" priority alt="/" width='400' height='400' className=""/>
+                                            <Image src="/ponderful.png" priority alt="/" width='400' height='400' className=""/>
                                         </Grid>
                                         <Grid item>
                                             <h3 className="pt-5 pl-5">ponderful.</h3>

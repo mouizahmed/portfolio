@@ -9,7 +9,7 @@ const Education = () => {
                 <h3 className="pb-5">Education</h3>
                 <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="flex justify-center items-center">
-                        <Image src="/../public/yorku.png" alt="/" width='30' height='30' className="rounded-xl"/>
+                        <Image src="/yorku.png" alt="/" width='30' height='30' className="rounded-xl"/>
                     </Grid>
                     <Grid item xs={6} sm={6} md={6} lg={6} xl={6} className="flex justify-start">
                         <Grid container columns={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}>
