@@ -7,6 +7,8 @@ import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import { useTheme } from 'next-themes' 
 
+import Popover from '@mui/material/Popover'
+
 const Navbar = () => {
 
 const [nav, setNav] = useState(false)
@@ -14,6 +16,7 @@ const [shadow, setShadow] = useState(false)
 const { systemTheme, theme, setTheme } = useTheme()
 const [mounted, setMounted] = useState(false)
 const [fading, setFading] = useState(" opacity-0 ease-in ")
+const [anchorEl, setAnchorEl] = useState(null);
 
 const renderThemeChanger = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -32,6 +35,17 @@ const renderThemeChanger = () => {
         )
     }
 }
+
+const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
 
 
 const logo = () => {
@@ -99,14 +113,31 @@ useEffect(() => {
                 </ul>
                 
                 <div onClick={handleNav} className="md:hidden px-7">
-                    <AiOutlineMenu size={25} />
-                    
+                    {/* <AiOutlineMenu size={25} onClick={handleClick} /> */}
+                    {renderThemeChanger()}
                 </div>
             </div>
             </nav>
         </div>
 
-        <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}> 
+        <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        sx={{ width: '100%'}}
+      >
+        {/* <h3 className="p-5">The content of the Popover.</h3> */}
+        <div className="p-5">
+            {renderThemeChanger()}
+        </div>
+      </Popover>
+
+        {/* <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}> 
             <div className={nav ? "md:hidden fixed left-0 top-0 w-[100%] sm:w-[100%] md:w-[100%] h-screen bg-[#ecf0f3] p-10" 
                                 : "fixed left-[-100%] top-0"}>
                 <div className="">
@@ -150,7 +181,7 @@ useEffect(() => {
                                 
             </div>
             
-        </div>
+        </div> */}
 
 
 

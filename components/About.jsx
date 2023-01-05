@@ -28,7 +28,7 @@ const About = () => {
     <div id="about">
         <Grid container spacing={2} columns={{ xs: 1, sm: 1, md: 4, lg: 4, xl: 4 }}>
                 <Grid item xs={1} sm={1} md={3} lg={3} xl={3}>
-                    <div className="pl-5">
+                    <div className="pl-5 pr-5">
                         <h1 className={"tracking-normal typing text-4xl transition-opacity duration-600" + fading}>Mouiz Ahmed</h1>
                         <p className={"transition-opacity duration-600 delay-600" + fading}>Software Engineering Student @ YorkU</p>
                         
@@ -36,10 +36,11 @@ const About = () => {
                         <p className="uppercase text-md tracking-widest ">York University</p> */}
                         
                     </div>
-                    <div className="pl-5 pt-5 dark:text-[#edede8]">
+                    <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
                         <p className={"transition-opacity duration-600   delay-700" + fading}>Hey 👋!</p>
                         <div className={"transition-opacity duration-600   delay-800" + fading}>
-                        <p>I&apos;m a third-year Software Engineering Co-op student at York University with a passion for innovating and problem-solving in the tech industry.</p> 
+                        <br></br>
+                        <p>I&apos;m a third-year Software Engineering Co-op student at York University with a passion for innovating and problem-solving within the tech industry.</p> 
                            
                            <br></br>
                        
@@ -51,10 +52,7 @@ const About = () => {
                             <p>
                             At the moment, I&apos;m on track to learn more about algorithm design, combinatorics, data modelling, data training, and neural networks.
                             </p>
-                           <br></br>
-                           <p>
-                           My goal is to utilize technology to enable people, businesses and society to become better at what they do.
-                           </p>
+                           
                            </div>
                     </div>
                     <div className={"pl-5 pr-5 pt-5 dark:text-[#edede8] transition-opacity duration-600 delay-1000" + fading}>
