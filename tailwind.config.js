@@ -6,7 +6,13 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        600: "600ms",
+        800: "800ms",
+        900: "900ms",
+      },
+    },
     transitionDelay: {
       100: "100ms",
       200: "200ms",

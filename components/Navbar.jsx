@@ -70,7 +70,7 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className={"w-full flex flex-col transition-opacity duration-600 delay-1300" + fading}>
+    <div className={"w-full flex flex-col transition-opacity duration-800 delay-1100" + fading}>
         <div className="">
             <nav className="flex justify-between max-w-3xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
                 <div className="">
