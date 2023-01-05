@@ -32,7 +32,21 @@ const About = () => {
                     </div>
                     <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
                         <p className="">Hey 👋!</p>
-                        <p>I&apos;m a third-year Software Engineering Co-op student.</p>
+                        <p>I&apos;m a third-year Software Engineering Co-op student at York University with a passion for innovating and problem-solving in the tech industry. 
+                           
+                           <br></br>
+                           <br></br>
+                           I love working with big data, creating full-stack web applications, delving into mobile development, experimenting with UI/UX design, and working with various front-end frameworks.
+                        
+
+                            <br></br>
+                            <br></br>
+                            At the moment, I&apos;m on track to learn more about algorithm design, combinatorics, data modelling, data training, and neural networks.
+
+                           <br></br>
+                           <br></br>
+                           My goal is to utilize technology to enable people, businesses and society to become better at what they do.
+                        </p>
                     </div>
                     <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
                         <p>Let&apos;s Connect!</p>
