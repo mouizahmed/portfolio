@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 import { AiFillAlert } from 'react-icons/ai'
@@ -8,8 +8,15 @@ import CardContent from '@mui/material/CardContent'
 import Grid from '@mui/material/Grid';
 
 const Current = () => {
+
+    const [fading, setFading] = useState(" opacity-0 ease-in ");
+
+    useEffect(() => {
+        setFading(" opacity-100 easin-in ");
+    }, [])
+
   return (
-    <div className="pl-5 pr-5 pt-5">
+    <div className={"pl-5 pr-5 pt-5 transition-opacity duration-600 delay-1100" + fading}>
         <h3 className="pb-5">Currently</h3>
         <Card className="rounded-xl border-transparent border-2 hover:border-white pr-5" style={{ backgroundColor: "#4da64d" }}>
             <CardContent>

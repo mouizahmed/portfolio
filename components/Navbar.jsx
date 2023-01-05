@@ -13,6 +13,7 @@ const [nav, setNav] = useState(false)
 const [shadow, setShadow] = useState(false)
 const { systemTheme, theme, setTheme } = useTheme()
 const [mounted, setMounted] = useState(false)
+const [fading, setFading] = useState(" opacity-0 ease-in ")
 
 const renderThemeChanger = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -64,11 +65,12 @@ const handleNav = () => {
 
 useEffect(() => {
     setMounted(true)
+    setFading(" opacity-100 easin-in ")
 
 }, [])
 
   return (
-    <div className="w-full flex flex-col">
+    <div className={"w-full flex flex-col transition-opacity duration-600 delay-1300" + fading}>
         <div className="">
             <nav className="flex justify-between max-w-3xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
                 <div className="">

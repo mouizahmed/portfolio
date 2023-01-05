@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,8 +9,16 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent'
 
 const Projects = () => {
+
+    const [fading, setFading] = useState(" opacity-0 ease-in ");
+
+    useEffect(() => {
+        setFading(" opacity-100 easin-in ");
+    }, [])
+
+
   return (
-    <div className="pl-5 pr-5 pt-5 transition-opacity duration-600" id="projects" >
+    <div className={"pl-5 pr-5 pt-5 transition-opacity duration-600 delay-1200" + fading} id="projects" >
                 <h3 className="pb-5">Featured Projects</h3>
                 <div>
                     <Grid container spacing={2} columns={{ xs: 2, sm: 2, md: 2, lg: 2, xl: 2}} className="">
