@@ -37,7 +37,7 @@ const Projects = () => {
                                             <h3 className="pl-5 pr-5 pb-5">Python • Flask • Hugging Face API • Torch • HTML/CSS</h3>
                                         </Grid>
                                         <Grid>
-                                            <h6 className="pl-5 pr-5">A web tool that allows educators to determine if a piece of text was AI generated or human made.</h6>
+                                            <p className="pl-5 pr-5">A web tool that allows educators to determine if a piece of text was AI generated or human made.</p>
                                         </Grid>
                                     </Grid>
                                 </CardContent>
@@ -71,7 +71,7 @@ const Projects = () => {
                                             <h3 className="pl-5 pr-5 pb-5">MongoDB • ExpressJS • ReactJS • NodeJS • MUI</h3>
                                         </Grid>
                                         <Grid>
-                                            <h6 className="pl-5 pr-5">A web application that eases the struggles of making plans or group decisions with a large group of friends.</h6>
+                                            <p className="pl-5 pr-5">A web application that eases the struggles of making plans or group decisions with a large group of friends.</p>
                                         </Grid>
                                     </Grid>
                                 </CardContent>
@@ -105,7 +105,7 @@ const Projects = () => {
                                         <h3 className="pl-5 pr-5 pb-5">MySQL • ExpressJS • ReactJS • NodeJS • MUI • Google Cloud Platform • JWT • Cloudinary</h3>
                                     </Grid>
                                     <Grid item>
-                                        <h6 className="pl-5 pr-5 font-thick">A web application that allows users to create course reviews for their respective post-secondary schools and ease their struggles within the course selection process.</h6>
+                                        <p className="pl-5 pr-5 font-thick">A web application that allows users to create course reviews for their respective post-secondary schools and ease their struggles within the course selection process.</p>
                                     </Grid>
                                 </Grid>
                             </CardContent>
