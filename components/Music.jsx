@@ -73,8 +73,8 @@ const Music = () => {
         <h3>What I&apos;m Listening To</h3>
         <div className="flex justify-center pt-5 rounded-xl hover:scale-110 transform transition duration-300 ease-in-out cursor-pointer">
             <Link href={currentlyPlaying.item.external_urls.spotify} rel="noopener noreferrer" target="_blank">
-                <Card className="" style={{ background: `linear-gradient(to bottom, rgb(${colors[0]}), rgb(${colors[1]})` }}>
-                    <CardContent>
+                <Card className="rounded-xl" style={{ background: `linear-gradient(to bottom, rgb(${colors[0]}), rgb(${colors[1]})` }}>
+                    <CardContent className="rounded-xl">
                         <Grid container spacing={2} columns={{ xs: 2, sm: 2, md: 2, lg: 2, xl: 2 }}>
                             <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="">
                                 <Image className="rounded-xl hover:scale-110 transform transition duration-300 ease-in-out" src={currentlyPlaying.item.album.images[1].url} onLoad={handleImageLoad} alt="Picture of the author" width={150} height={150} />
