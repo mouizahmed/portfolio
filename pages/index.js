@@ -37,7 +37,7 @@ export default function Home() {
             <Projects />
             <Experience />
             <Education />
-            {/* <Music /> */}
+            <Music />
         </div>
 
         
