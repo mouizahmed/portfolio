@@ -74,7 +74,7 @@ const About = () => {
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link href="/updated-resume.pdf">
+                            <Link href="/mouizahmed-resume.pdf">
                                 <div className="bg-[#d5d5d1] dark:bg-[#4B5563] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer">
                                     <MdContactPage className="w-4 h-4 dark:fill-white fill-black" role="button" />
                                 </div>
