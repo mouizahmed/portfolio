@@ -17,8 +17,6 @@
 
 .env
 
-/public
-
 # misc
 .DS_Store
 *.pem
