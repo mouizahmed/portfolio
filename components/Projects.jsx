@@ -28,7 +28,7 @@ const Projects = () => {
                             <CardContent className="p-0">
                                     <Grid container>
                                         <Grid item>
-                                            <Image src="/catchGPT.png" priority alt="/" width='480' height='480' className="align-top"/>
+                                            <Image src="/catchgpt_pic.png" priority alt="/" width='480' height='480' className="align-top"/>
                                         </Grid>
                                         <Grid item>
                                             <h3 className="text-xl pt-5 pl-5">CatchGPT</h3>
@@ -43,18 +43,52 @@ const Projects = () => {
                                 </CardContent>
                         </Card>
                         </Link>
-                        {/* <Card className="ml-4 opacity-0 rounded-xl w-3xl bg-[#000000] hover:opacity-50 transition ease-out duration-300 cursor-pointer absolute bottom-0 top-4 left-0 right-0">
+                        </Grid>
+                        <Grid item xs={2} sm={1} md={1} lg={1} xl={1} className="group">
+                        <Link href="https://github.com/mouizahmed/flashstudy">
+                        <Card className="h-[625px] bg-[#fffff] bg-opacity-20 rounded-xl w-3xl cursor-pointer md:hover:shadow-2xl md:hover:scale-105 transition">
                             <CardContent className="p-0">
-                                <Grid container columns={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}>
-                                    
-                                    <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="flex items-center justify-center h-[475px]">
-                                        <h3 className="text-[#ffffff]">More Information</h3>
+                                <Grid container>
+                                    <Grid item>
+                                        <Image src="/flashstudy_pic.png" priority alt="/" width='400' height='400' className=""/>
                                     </Grid>
-                                    
+                                    <Grid item>
+                                        <h3 className="text-xl pt-5 pl-5">FlashStudy</h3>
+                                    </Grid>
+                                    <Grid item>
+                                        <h3 className="pl-5 pr-5 pb-5">Java • Maven  •  MVC Architecture • MySQL • OpenAI API • CircleCI</h3>
+                                    </Grid>
+                                    <Grid item>
+                                        <p className="pl-5 pr-5 font-thick">A Java Swing Application that allows users to study efficiently with flash cards. It employs features such as AI definition autocompletion, fact check, and quiz question generation.</p>
+                                    </Grid>
                                 </Grid>
                             </CardContent>
                             
-                        </Card> */}
+                        </Card>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} sm={1} md={1} lg={1} xl={1} className="group">
+                        <Link href="https://github.com/mouizahmed/course_reviews">
+                        <Card className="h-[625px] bg-[#fffff] bg-opacity-20 rounded-xl w-3xl cursor-pointer md:hover:shadow-2xl md:hover:scale-105 transition">
+                            <CardContent className="p-0">
+                                <Grid container>
+                                    <Grid item>
+                                        <Image src="/course_reviews_pic.png" priority alt="/" width='400' height='400' className=""/>
+                                    </Grid>
+                                    <Grid item>
+                                        <h3 className="text-xl pt-5 pl-5">Course Reviews</h3>
+                                    </Grid>
+                                    <Grid item>
+                                        <h3 className="pl-5 pr-5 pb-5">MySQL • ExpressJS • ReactJS • NodeJS • MUI • GCP • JWT • Cloudinary</h3>
+                                    </Grid>
+                                    <Grid item>
+                                        <p className="pl-5 pr-5 font-thick">A web application that allows users to create course reviews for their respective post-secondary schools and ease their struggles within the course selection process.</p>
+                                    </Grid>
+                                </Grid>
+                            </CardContent>
+                            
+                        </Card>
+                        </Link>
                         </Grid>
                         <Grid item xs={2} sm={1} md={1} lg={1} xl={1} className="group">
                         <Link href="https://github.com/mouizahmed/ponderful">
@@ -62,7 +96,7 @@ const Projects = () => {
                             <CardContent className="p-0">
                                     <Grid container>
                                         <Grid item>
-                                            <Image src="/ponderful.png" priority alt="/" width='400' height='400' className=""/>
+                                            <Image src="/ponderful_pic.png" priority alt="/" width='400' height='400' className=""/>
                                         </Grid>
                                         <Grid item>
                                             <h3 className="text-xl pt-5 pl-5">ponderful.</h3>
@@ -77,55 +111,8 @@ const Projects = () => {
                                 </CardContent>
                         </Card>
                         </Link>
-                        {/* <Card className="ml-4 opacity-0 rounded-xl w-3xl bg-[#000000] hover:opacity-50 transition ease-out duration-300 cursor-pointer absolute bottom-0 top-4 left-0 right-0">
-                            <CardContent className="p-0">
-                                <Grid container columns={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}>
-                                    
-                                    <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="flex items-center justify-center h-[475px]">
-                                        <h3 className="text-[#ffffff]">More Information</h3>
-                                    </Grid>
-                                    
-                                </Grid>
-                            </CardContent>
-                            
-                        </Card> */}
                         </Grid>
-                        <Grid item xs={2} sm={1} md={1} lg={1} xl={1} className="group">
-                        <Link href="https://github.com/mouizahmed/course_reviews">
-                        <Card className="h-[625px] bg-[#fffff] bg-opacity-20 rounded-xl w-3xl cursor-pointer md:hover:shadow-2xl md:hover:scale-105 transition">
-                            <CardContent className="p-0">
-                                <Grid container>
-                                    <Grid item>
-                                        <Image src="/placeholder.png" priority alt="/" width='400' height='400' className=""/>
-                                    </Grid>
-                                    <Grid item>
-                                        <h3 className="text-xl pt-5 pl-5">Course Reviews</h3>
-                                    </Grid>
-                                    <Grid item>
-                                        <h3 className="pl-5 pr-5 pb-5">MySQL • ExpressJS • ReactJS • NodeJS • MUI • Google Cloud Platform • JWT • Cloudinary</h3>
-                                    </Grid>
-                                    <Grid item>
-                                        <p className="pl-5 pr-5 font-thick">A web application that allows users to create course reviews for their respective post-secondary schools and ease their struggles within the course selection process.</p>
-                                    </Grid>
-                                </Grid>
-                            </CardContent>
-                            
-                        </Card>
-                        </Link>
-                        {/* <Card className="ml-4 opacity-0 rounded-xl w-3xl bg-[#000000] hover:opacity-50 transition ease-out duration-300 cursor-pointer absolute bottom-0 top-4 left-0 right-0">
-                            <CardContent className="p-0">
-                                <Grid container columns={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}>
-                                    
-                                    <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="flex items-center justify-center h-[475px]">
-                                        <h3 className="text-[#ffffff]">More Information</h3>
-                                    </Grid>
-                                    
-                                </Grid>
-                            </CardContent>
-                            
-                        </Card> */}
-                    
-                        </Grid>
+                        
                        
                         <Grid item xs={2} sm={2} md={2} lg={2} xl={2} className="flex items-center justify-end">
                             <Link href="https://github.com/mouizahmed"><div className="dark:bg-[#4B5563] bg-[#d5d5d1] flex p-1 h-10 w-35 rounded-lg justify-center items-center border-transparent border-2 hover:border-white cursor-pointer"><h4>View More </h4> <FiArrowUpRight /></div></Link>

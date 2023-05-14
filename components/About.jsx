@@ -40,18 +40,23 @@ const About = () => {
                         <p className={"transition-opacity duration-600   delay-700" + fading}>Hey 👋!</p>
                         <div className={"transition-opacity duration-600   delay-800" + fading}>
                         <br></br>
-                        <p>I&apos;m a third-year Software Engineering Co-op student at York University with a passion for innovating and problem-solving within the tech industry.</p> 
+                        <p>I am a motivated third-year student studying at York University, pursuing a degree in Software Engineering who&apos;s ambitious for innovating and problem-solving in the tech industry.</p> 
                            
                            <br></br>
                        
                            <p>
-                           I love working with big data, creating full-stack web applications, delving into mobile development, experimenting with UI/UX design, and working with various front-end frameworks.
+                           I have a strong passion for coding, particularly with Java, Python, ReactJS, and others where I&apos;ve gained practical experience in these languages through various projects.
                            </p>
 
                             <br></br>
-                            <p>
-                            At the moment, I&apos;m on track to learn more about algorithm design, combinatorics, data modelling, data training, and neural networks.
-                            </p>
+                            
+                            <p>I love working with big data, applying ML and AI algorithms, full-stack development, and developing mobile applications.</p>
+                            
+                            <br></br>
+
+                            <p>I&apos;m always eager to learn and ask questions, constantly seeking new challenges to expand my skill set. Overall, my goal is to leverage technology to enable people and businesses to become better at what they do.</p>
+                            
+                        
                            
                            </div>
                     </div>
