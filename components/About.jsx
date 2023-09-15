@@ -100,7 +100,7 @@ const About = () => {
                 </Grid>
                 <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
                     <div className="pl-5 pr-5">
-                <Image src={"/profile.jpg"} priority alt="/" width='500' height='400' className={"rounded-lg border-transparent border-2 hover:border-white transition-opacity duration-800 delay-900" + fading}/>
+                <Image src={"/pfp.jpg"} priority alt="/" width='500' height='400' className={"rounded-lg border-transparent border-2 hover:border-white transition-opacity duration-800 delay-900" + fading}/>
                 </div>
                 </Grid> 
 
