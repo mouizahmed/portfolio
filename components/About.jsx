@@ -31,15 +31,13 @@ const About = () => {
                     <div className="pl-5 pr-5">
                         <h1 className={"tracking-normal typing text-4xl transition-opacity duration-600" + fading}>Mouiz Ahmed</h1>
                         <p className={"transition-opacity duration-600 delay-600" + fading}>Software Engineering Student @ YorkU</p>
-                        
                         {/* <p className="uppercase text-md tracking-widest ">Software Engineering Student</p>
                         <p className="uppercase text-md tracking-widest ">York University</p> */}
-                        
                     </div>
                     <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
                         {/* <p className={"transition-opacity duration-600   delay-700" + fading}>Hey 👋!</p> */}
                         <div className={"transition-opacity duration-600   delay-700" + fading}>                   
-                           <p>Hello! I'm a Software Engineering student at York University.</p>
+                           <p>Hello! I&apos;m a Software Engineering student at York University.</p>
                             <br></br>
                             <p>I love working with big data, applying ML and AI algorithms, full-stack development, and developing mobile applications.</p>
                            </div>
