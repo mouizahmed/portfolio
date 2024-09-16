@@ -33,10 +33,10 @@ export default function Home() {
         {/* <Main /> */}
         <div className="max-w-3xl h-full mx-auto p-3 flex flex-col mb-3">
             <About />
-            <Current seeking={false} focus={""} logoPath={"/ericsson.png"} companyName={"Ericsson"} title={"5G Software Developer"} timeline={"Present"} />
-            <Projects />
+            {/* <Current seeking={false} focus={""} logoPath={"/ericsson.png"} companyName={"Ericsson"} title={"5G Software Developer"} timeline={"Present"} /> */}
             <Experience />
             <Education />
+            <Projects />
             <Music />
         </div>
 
