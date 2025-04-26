@@ -1,25 +1,21 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 
 import { Poppins } from '@next/font/google';
 
-import Navbar from '../components/Navbar.jsx'
-import Music from '../components/Music.jsx'
-import Education from '../components/Education.jsx'
-import Experience from '../components/Experience.jsx'
-import Projects from '../components/Projects.jsx'
-import Current from '../components/Current.jsx'
-import About from '../components/About.jsx'
+import Navbar from '../components/Navbar.jsx';
+import Music from '../components/Music.jsx';
+import Education from '../components/Education.jsx';
+import Experience from '../components/Experience.jsx';
+import Projects from '../components/Projects.jsx';
+import About from '../components/About.jsx';
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['200']
-})
+  weight: ['200'],
+});
 
 export default function Home() {
-
-  
-
   return (
     <div>
       <Head>
@@ -32,20 +28,16 @@ export default function Home() {
         <Navbar />
         {/* <Main /> */}
         <div className="max-w-3xl h-full mx-auto p-3 flex flex-col mb-3">
-            <About />
-            {/* <Current seeking={false} focus={""} logoPath={"/ericsson.png"} companyName={"Ericsson"} title={"5G Software Developer"} timeline={"Present"} /> */}
-            <Experience />
-            <Education />
-            <Projects />
-            <Music />
+          <About />
+          {/* <Current seeking={false} focus={""} logoPath={"/ericsson.png"} companyName={"Ericsson"} title={"5G Software Developer"} timeline={"Present"} /> */}
+          <Experience />
+          <Education />
+          <Projects />
+          <Music />
         </div>
-
-        
       </main>
 
-      <footer>
-       
-      </footer>
+      <footer></footer>
     </div>
-  )
+  );
 }

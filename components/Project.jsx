@@ -1,43 +1,18 @@
-import Image from 'next/image'
-import Grid from '@mui/material/Grid'
 import Link from 'next/link'
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent'
+import Grid from '@mui/material/Grid'
 
-const Project = ({ imagePath, projectLink, title, tags, description }) => {
-
+const Project = ({ projectLink, title, tags, description }) => {
     return (
-        <>
-            <Grid item xs={2} sm={1} md={1} lg={1} xl={1} className="group">
-                <Link href={projectLink}>
-                    <Card className="h-[625px] bg-[#fffff] bg-opacity-20 rounded-xl w-3xl cursor-pointer md:hover:shadow-2xl md:hover:scale-105 transition">
-                        <CardContent className="p-0">
-                            <Grid container>
-                                <Grid item>
-                                    <Image src={imagePath} priority alt="/" width='480' height='480' className="align-top" />
-                                </Grid>
-                                <Grid item>
-                                    <h3 className="text-xl pt-5 pl-5">{title}</h3>
-                                </Grid>
-                                <Grid>
-                                    <h3 className="pl-5 pr-5 pb-5">{tags.map((tag, i) => (
-                                        <span key={i}>
-                                            {tag}
-                                            {i < tags.length - 1 && " • "}
-                                        </span>
-                                    ))}</h3> {/* map with * array */}
-                                </Grid>
-                                <Grid>
-                                    <p className="pl-5 pr-5">{description}</p>
-                                </Grid>
-                            </Grid>
-                        </CardContent>
-                    </Card>
-                </Link>
-            </Grid>
-        </>
+        <Grid item xs={9} sm={9} md={9} lg={9} xl={9}>
+            <Link href={projectLink}>
+                <div className="hover:bg-[#d5d5d1] dark:hover:bg-[#1f2937] p-4 rounded-lg transition-all duration-200">
+                    <h3 className="text-xl">{title}</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{tags.join(" • ")}</p>
+                    <p className="mt-2">{description}</p>
+                </div>
+            </Link>
+        </Grid>
     )
-
 }
 
 export default Project

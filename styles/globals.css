@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
   scroll-behavior: smooth;
-
 }
 
 @layer base {
   body {
-    @apply bg-[#edede9] text-[#000000] tracking-wide dark:bg-[#000000] dark:text-[#ffffff]
+    @apply bg-white text-black tracking-wide dark:bg-black dark:text-white
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -28,4 +26,8 @@ html {
   li {
     @apply cursor-pointer
   }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
