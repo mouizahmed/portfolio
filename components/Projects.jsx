@@ -15,12 +15,12 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className={`pl-5 pr-5 pt-5 transition-opacity duration-600 ${fadeState}`}>
+        <div id="projects" className={`pl-5 pr-5 pt-5 transition-opacity duration-600 ${fadeState}`}>
             <h3 className="pb-5">Featured Projects</h3>
             <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                 <Project
                     projectLink="https://github.com/mouizahmed/ratethatclass"
-                    title="RateThatClass"
+                    title="RateThatClass.com"
                     tags={["ReactJS (NextJS)", "Node.js", "ExpressJS", "PostgreSQL", "API Design", "Jest", "AWS"]}
                     description="A full-stack web application for students to anonymously review their classes."
                 />
