@@ -1,6 +1,6 @@
 # Portfolio Website
 
-My personal website - [mouizahmed.com](https//mouizahmed.com/)
+My personal website - [mouizahmed.com](https://mouizahmed.com/)
 
 # Tools & Frameworks
 
