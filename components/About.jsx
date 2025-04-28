@@ -33,9 +33,9 @@ const About = () => {
                         <div>
                             <p>Hello! I&apos;m a final year Software Engineering student at York University.</p>
                             <br></br>
-                            <p>To put it simply: I&apos;m passionate about coding, innovation, and problem-solving.</p>
+                            <p>Simply put: I&apos;m passionate about coding, innovation, and problem-solving.</p>
                             <br></br>
-                            <p>My goal is to leverage technology to enable people and businesses to become better at what they do.</p>
+                            <p>I aim to leverage technology to enable people and businesses to become better at what they do.</p>
                         </div>
                     </div>
                     <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
