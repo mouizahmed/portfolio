@@ -23,12 +23,14 @@ const Projects = () => {
                     title="RateThatClass.com"
                     tags={["ReactJS (NextJS)", "Node.js", "ExpressJS", "PostgreSQL", "API Design", "Jest", "AWS"]}
                     description="A full-stack web application for students to anonymously review their classes."
+                    date="Jan 2025"
                 />
                 <Project
                     projectLink="https://github.com/mouizahmed/catchgpt"
                     title="CatchGPT"
                     tags={["Python", "Flask", "Hugging Face API", "Torch", "JQuery", "HTML/CSS"]}
                     description="A machine learning tool that detects AI-generated text for plagiarism."
+                    date="Nov 2023"
                 />
                 {/* <Project
                     projectLink="https://github.com/yourusername/project3"
