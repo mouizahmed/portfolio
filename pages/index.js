@@ -9,6 +9,7 @@ import Education from '../components/Education.jsx';
 import Experience from '../components/Experience.jsx';
 import Projects from '../components/Projects.jsx';
 import About from '../components/About.jsx';
+import Chess from '../components/Chess.jsx';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -34,6 +35,7 @@ export default function Home() {
           <Education />
           <Projects />
           <Music />
+          <Chess />
         </div>
       </main>
 
