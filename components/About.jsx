@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid';
 
 const About = () => {
     const [copied, setCopied] = useState(false);
-    const [fadeState, setFadeState] = useState("opacity-0");
 
     const email = () => {
         navigator.clipboard.writeText("mouiza@my.yorku.ca")
@@ -14,22 +13,15 @@ const About = () => {
         setTimeout(() => setCopied(false), 2000);
     }
 
-    useEffect(() => {
-        // About component appears first
-        setTimeout(() => {
-            setFadeState("opacity-100");
-        }, 100);
-    }, []);
-
     return (
-        <div id="about" className={`transition-opacity duration-600 ${fadeState}`}>
+        <div id="about">
             <Grid container spacing={4} columns={{ xs: 1, sm: 1, md: 12, lg: 12, xl: 12 }}>
                 <Grid item xs={1} sm={1} md={7} lg={7} xl={7}>
-                    <div className="pl-5 pr-5">
+                    <div>
                         <h1 className="tracking-normal typing text-4xl">Mouiz Ahmed</h1>
                         <p>Software Engineering Student @ YorkU</p>
                     </div>
-                    <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
+                    <div className="pt-5 dark:text-[#edede8]">
                         <div>
                             <p>Hello! I&apos;m a final year Software Engineering student at York University.</p>
                             <br></br>
@@ -38,10 +30,10 @@ const About = () => {
                             <p>I aim to leverage technology to enable people and businesses to become better at what they do.</p>
                         </div>
                     </div>
-                    <div className="pl-5 pr-5 pt-5 dark:text-[#edede8]">
+                    <div className="pt-5 dark:text-[#edede8]">
                         <p>Let&apos;s Connect!</p>
                     </div>
-                    <div className="pl-5 pr-5 pt-5">
+                    <div className="pt-5">
                         <div className="flex flex-wrap items-center gap-2">
                             <div className="flex items-center gap-2">
                                 <Link href="https://github.com/mouizahmed" className="hover:opacity-75 transition-opacity text-blue-500 dark:text-blue-400">github</Link>

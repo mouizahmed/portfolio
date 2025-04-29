@@ -1,19 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import Grid from '@mui/material/Grid';
 
 const Education = () => {
-    const [fadeState, setFadeState] = useState("opacity-0");
-
-    useEffect(() => {
-        // Education component appears third
-        setTimeout(() => {
-            setFadeState("opacity-100");
-        }, 1500);
-    }, []);
-
     return (
-        <div className={`pl-5 pr-5 transition-opacity duration-600 ${fadeState}`}>
+        <div>
             <h3 className="pb-5">Education</h3>
             <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                 <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="flex justify-center items-center">

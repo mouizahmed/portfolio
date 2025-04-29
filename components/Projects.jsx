@@ -1,21 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { FiArrowUpRight } from 'react-icons/fi'
+import React from 'react'
 import Grid from '@mui/material/Grid';
 import Project from "./Project"
 
 const Projects = () => {
-    const [fadeState, setFadeState] = useState("opacity-0");
-
-    useEffect(() => {
-        // Projects component appears third
-        setTimeout(() => {
-            setFadeState("opacity-100");
-        }, 1600);
-    }, []);
-
     return (
-        <div id="projects" className={`pl-5 pr-5 transition-opacity duration-600 ${fadeState}`}>
+        <div id="projects">
             <h3 className="pb-5">Featured Projects</h3>
             <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                 <Project

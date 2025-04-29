@@ -76,14 +76,8 @@ const AnimatedBars = () => {
 const Music = () => {
     const [currentlyPlaying, setCurrentlyPLaying] = useState(null);
     const [artists, setArtists] = useState([]);
-    const [fadeState, setFadeState] = useState("opacity-0");
 
     useEffect(() => {
-        // Music component appears fifth
-        setTimeout(() => {
-            setFadeState("opacity-100");
-        }, 2900);
-
         async function fetchData() {
             const refresh_token = process.env.NEXT_PUBLIC_REFRESH_TOKEN;
 
@@ -124,7 +118,7 @@ const Music = () => {
     }, []);
 
     return (
-        <div className={`pl-5 pr-5 transition-opacity duration-600 ${fadeState}`}>
+        <div>
             <h3 className='pb-5'>What I&apos;m Listening To</h3>
             {currentlyPlaying ? (
                 <Link href={currentlyPlaying.item.external_urls.spotify} rel="noopener noreferrer" target="_blank">

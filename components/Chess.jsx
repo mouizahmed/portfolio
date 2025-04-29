@@ -3,15 +3,9 @@ import Link from 'next/link'
 
 const Chess = () => {
     const [chessStats, setChessStats] = useState(null);
-    const [fadeState, setFadeState] = useState("opacity-0");
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Chess component appears sixth
-        setTimeout(() => {
-            setFadeState("opacity-100");
-        }, 3000);
-
         async function fetchChessStats() {
             try {
                 const response = await fetch('https://api.chess.com/pub/player/stax404/stats');
@@ -36,7 +30,7 @@ const Chess = () => {
     }, []);
 
     return (
-        <div className={`pl-5 pr-5 pb-5 transition-opacity duration-600 ${fadeState}`}>
+        <div>
             <h3 className='pb-5'>Play chess with me!</h3>
             {isLoading ? (
                 <div>
