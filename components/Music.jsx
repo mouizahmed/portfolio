@@ -124,7 +124,7 @@ const Music = () => {
     }, []);
 
     return (
-        <div className={`pl-5 pr-5 pt-5 pb-5 transition-opacity duration-600 ${fadeState}`}>
+        <div className={`pl-5 pr-5 transition-opacity duration-600 ${fadeState}`}>
             <h3 className='pb-5'>What I&apos;m Listening To</h3>
             {currentlyPlaying ? (
                 <Link href={currentlyPlaying.item.external_urls.spotify} rel="noopener noreferrer" target="_blank">

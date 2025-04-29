@@ -13,7 +13,7 @@ const Experience = () => {
     }, []);
 
     return (
-        <div className={`pl-5 pr-5 pt-5 transition-opacity duration-600 ${fadeState}`}>
+        <div className={`pl-5 pr-5 transition-opacity duration-600 ${fadeState}`}>
             <h3 className="pb-5">Where I&apos;ve been</h3>
             <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                 <Job logoPath={"/ericsson.png"} companyName={"Ericsson"} position={"5G Software Developer"} timeline={"Sept 2023 - Aug 2024"} />

@@ -36,7 +36,7 @@ const Chess = () => {
     }, []);
 
     return (
-        <div className={`pl-5 pr-5 pt-5 pb-5 transition-opacity duration-600 ${fadeState}`}>
+        <div className={`pl-5 pr-5 pb-5 transition-opacity duration-600 ${fadeState}`}>
             <h3 className='pb-5'>Play chess with me!</h3>
             {isLoading ? (
                 <div>

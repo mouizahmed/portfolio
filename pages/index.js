@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Divider from '@mui/material/Divider';
 
 import { Poppins } from '@next/font/google';
 
@@ -30,11 +31,16 @@ export default function Home() {
         {/* <Main /> */}
         <div className="max-w-3xl h-full mx-auto p-3 flex flex-col mb-3">
           <About />
+          <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
           {/* <Current seeking={false} focus={""} logoPath={"/ericsson.png"} companyName={"Ericsson"} title={"5G Software Developer"} timeline={"Present"} /> */}
           <Experience />
+          <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
           <Education />
+          <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
           <Projects />
+          <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
           <Music />
+          <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
           <Chess />
         </div>
       </main>

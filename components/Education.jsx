@@ -13,7 +13,7 @@ const Education = () => {
     }, []);
 
     return (
-        <div className={`pl-5 pr-5 pt-5 transition-opacity duration-600 ${fadeState}`}>
+        <div className={`pl-5 pr-5 transition-opacity duration-600 ${fadeState}`}>
             <h3 className="pb-5">Education</h3>
             <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                 <Grid item xs={1} sm={1} md={1} lg={1} xl={1} className="flex justify-center items-center">
