@@ -56,24 +56,24 @@ export default function Home() {
         <div className="max-w-3xl h-full mx-auto p-7 flex flex-col mb-3">
           <div className={`transition-opacity duration-600 ${dividerStates.about}`}>
             <About />
-            <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
+            <Divider sx={{ borderColor: 'grey.200', opacity: 0.5, my: 3 }} />
           </div>
           {/* <Current seeking={false} focus={""} logoPath={"/ericsson.png"} companyName={"Ericsson"} title={"5G Software Developer"} timeline={"Present"} /> */}
           <div className={`transition-opacity duration-600 ${dividerStates.experience}`}>
             <Experience />
-            <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
+            <Divider sx={{ borderColor: 'grey.200', opacity: 0.5, my: 3 }} />
           </div>
           <div className={`transition-opacity duration-600 ${dividerStates.education}`}>
             <Education />
-            <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
+            <Divider sx={{ borderColor: 'grey.200', opacity: 0.5, my: 3 }} />
           </div>
           <div className={`transition-opacity duration-600 ${dividerStates.projects}`}>
             <Projects />
-            <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
+            <Divider sx={{ borderColor: 'grey.200', opacity: 0.5, my: 3 }} />
           </div>
           <div className={`transition-opacity duration-600 ${dividerStates.music}`}>
             <Music />
-            <Divider className="my-5" sx={{ borderColor: 'grey.200', opacity: 0.5 }} />
+            <Divider sx={{ borderColor: 'grey.200', opacity: 0.5, my: 3 }} />
           </div>
           <div className={`transition-opacity duration-600 ${dividerStates.chess}`}>
             <Chess />
