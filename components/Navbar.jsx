@@ -61,7 +61,7 @@ const Navbar = () => {
     return (
         <div className={`w-full flex flex-col opacity-0 animate-fade-in`}>
             <div className="">
-                <nav className="flex justify-between max-w-3xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 ">
+                <nav className="flex justify-between max-w-3xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8">
                     <div className="">
                         {logo()}
                     </div>
