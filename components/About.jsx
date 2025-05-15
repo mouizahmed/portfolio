@@ -8,7 +8,7 @@ const About = () => {
     const [copied, setCopied] = useState(false);
 
     const email = () => {
-        navigator.clipboard.writeText("mouiza@my.yorku.ca")
+        navigator.clipboard.writeText("mouizahmed1@gmail.com")
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     }
@@ -40,7 +40,7 @@ const About = () => {
                                 <span>/</span>
                                 <Link href="https://www.linkedin.com/in/mouizahmed/" className="hover:opacity-75 transition-opacity text-blue-500 dark:text-blue-400">linkedin</Link>
                                 <span>/</span>
-                                <Link href="https://www.instagram.com/mxu.1z/" className="hover:opacity-75 transition-opacity text-blue-500 dark:text-blue-400">instagram</Link>
+                                <Link href="https://www.instagram.com/mza.vii/" className="hover:opacity-75 transition-opacity text-blue-500 dark:text-blue-400">instagram</Link>
                                 <span>/</span>
                                 <Link href="/resume.pdf" className="hover:opacity-75 transition-opacity text-blue-500 dark:text-blue-400">resume</Link>
                             </div>
@@ -50,7 +50,7 @@ const About = () => {
                                         {copied ? "Copied!" : "Click to copy"}
                                     </span>
                                     <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded font-mono text-sm hover:opacity-75 transition-opacity">
-                                        mouiza@my.yorku.ca
+                                        mouizahmed1@gmail.com
                                     </code>
                                 </button>
                             </div>
