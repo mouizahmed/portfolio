@@ -9,8 +9,8 @@ const Projects = () => {
             <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                 <Project
                     projectLink="https://github.com/mouizahmed/ratethatclass"
-                    title="RateThatClass.com"
-                    tags={["ReactJS (NextJS)", "Node.js", "ExpressJS", "PostgreSQL", "API Design", "Jest", "AWS"]}
+                    title="Course Reviews Web Application"
+                    tags={["ReactJS (NextJS)", "Node.js", "ExpressJS", "PostgreSQL", "API Design", "Jest", "Python", "Docker"]}
                     description="A full-stack web application for students to anonymously review their classes."
                 />
                 <Project
