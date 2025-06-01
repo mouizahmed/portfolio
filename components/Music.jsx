@@ -3,6 +3,7 @@ import qs from "querystring";
 import Link from 'next/link'
 import { animate } from "motion";
 import { FaSpotify } from "react-icons/fa";
+import Image from 'next/image';
 
 const AnimatedBars = () => {
     useEffect(() => {
@@ -76,6 +77,7 @@ const AnimatedBars = () => {
 const Music = () => {
     const [currentlyPlaying, setCurrentlyPLaying] = useState(null);
     const [artists, setArtists] = useState([]);
+    const [albumImage, setAlbumImage] = useState(null);
 
     useEffect(() => {
         async function fetchData() {
@@ -103,6 +105,8 @@ const Music = () => {
 
                 const response = await getCurrentlyPlaying.json();
 
+                setAlbumImage(response.item.album.images[1].url);
+
                 var artistsTemp = [];
                 response.item.artists.map((artist) => {
                     artistsTemp.push(artist.name);
@@ -124,6 +128,7 @@ const Music = () => {
                 <Link href={currentlyPlaying.item.external_urls.spotify} rel="noopener noreferrer" target="_blank">
                     <div className="flex items-center gap-4 transition-transform duration-200 cursor-pointer">
                         <AnimatedBars />
+                        <Image className="rounded-sm hover:scale-110 transform transition duration-300 ease-in-out" src={albumImage} alt="Album Cover" width={24} height={24} />
                         <p className="hover:opacity-75 transition-opacity duration-200">{currentlyPlaying.item.name} - {artists.join(', ')}</p>
                         <FaSpotify className="w-4 h-4 hover:opacity-75 transition-opacity duration-200" />
                     </div>
@@ -133,6 +138,13 @@ const Music = () => {
                     <p>Not currently playing anything</p>
                 </div>
             )}
+            <div className="mt-4 dark:border-gray-700">
+                <Link href="https://open.spotify.com/user/12179232988?si=067167f98fd342ea" rel="noopener noreferrer" target="_blank">
+                    <p className="text-sm text-gray-600 dark:text-gray-400 hover:text-green-500 dark:hover:text-green-400 transition-colors duration-200 cursor-pointer">
+                        Check out my Spotify and learn more about my music taste →
+                    </p>
+                </Link>
+            </div>
         </div>
     )
 }
