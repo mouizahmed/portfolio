@@ -31,7 +31,7 @@ const Chess = () => {
 
     return (
         <div className="relative">
-            <h3 className="pb-5">Let's Play Chess</h3>
+            <h3 className="pb-5">Let&apos;s Play Chess</h3>
 
             {isLoading ? (
                 <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
