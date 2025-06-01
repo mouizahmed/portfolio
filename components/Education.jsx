@@ -21,7 +21,10 @@ const Education = () => {
                     </Grid>
                 </Grid>
                 <Grid item xs={2} sm={2} md={2} lg={2} xl={2} sx={{ textAlign: "right" }}>
-                    <h3>2020-2026</h3>
+                    <div>
+                        <h3>2020 – 2026</h3>
+                        <p className="m-0 text-xs">(Expected)</p>
+                    </div>
                 </Grid>
             </Grid>
         </div>
