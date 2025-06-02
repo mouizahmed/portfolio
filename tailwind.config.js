@@ -4,6 +4,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Courier New', 'Courier', 'monospace'],
+        mono: ['Courier New', 'Courier', 'monospace'],
+      },
       transitionDuration: {
         600: '600ms',
         800: '800ms',
