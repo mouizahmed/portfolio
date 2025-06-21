@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Divider from '@mui/material/Divider';
 import { useState, useEffect } from 'react';
 
-import { Poppins } from '@next/font/google';
-
 import Navbar from '../components/Navbar.jsx';
 import Music from '../components/Music.jsx';
 import Education from '../components/Education.jsx';
@@ -12,11 +10,6 @@ import Experience from '../components/Experience.jsx';
 import Projects from '../components/Projects.jsx';
 import About from '../components/About.jsx';
 import Chess from '../components/Chess.jsx';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['200'],
-});
 
 export default function Home() {
   const [dividerStates, setDividerStates] = useState({
@@ -30,14 +23,14 @@ export default function Home() {
   });
 
   useEffect(() => {
-    // Match the timing with the components
+    // Consistent timing with 200ms intervals and 600ms duration
     setTimeout(() => setDividerStates(prev => ({ ...prev, navbar: 'opacity-100' })), 100);
-    setTimeout(() => setDividerStates(prev => ({ ...prev, about: 'opacity-100' })), 500);
-    setTimeout(() => setDividerStates(prev => ({ ...prev, experience: 'opacity-100' })), 800);
-    setTimeout(() => setDividerStates(prev => ({ ...prev, education: 'opacity-100' })), 1500);
-    setTimeout(() => setDividerStates(prev => ({ ...prev, projects: 'opacity-100' })), 1600);
-    setTimeout(() => setDividerStates(prev => ({ ...prev, music: 'opacity-100' })), 2900);
-    setTimeout(() => setDividerStates(prev => ({ ...prev, chess: 'opacity-100' })), 3000);
+    setTimeout(() => setDividerStates(prev => ({ ...prev, about: 'opacity-100' })), 300);
+    setTimeout(() => setDividerStates(prev => ({ ...prev, experience: 'opacity-100' })), 500);
+    setTimeout(() => setDividerStates(prev => ({ ...prev, education: 'opacity-100' })), 700);
+    setTimeout(() => setDividerStates(prev => ({ ...prev, projects: 'opacity-100' })), 900);
+    setTimeout(() => setDividerStates(prev => ({ ...prev, music: 'opacity-100' })), 1100);
+    setTimeout(() => setDividerStates(prev => ({ ...prev, chess: 'opacity-100' })), 1300);
   }, []);
 
   return (
@@ -48,7 +41,7 @@ export default function Home() {
         <link rel="icon" href="/header.png" />
       </Head>
 
-      <main className={poppins.className}>
+      <main>
         <div className={`transition-opacity duration-600 ${dividerStates.navbar}`}>
           <Navbar />
         </div>

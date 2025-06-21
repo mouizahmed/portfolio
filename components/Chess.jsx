@@ -64,7 +64,7 @@ const Chess = () => {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-blue-500 dark:text-blue-400 hover:opacity-75 transition-opacity text-sm"
                     >
-                        Challenge Me! ⚔️
+                        Challenge Me!
                     </Link>
                 </div>
             ) : (

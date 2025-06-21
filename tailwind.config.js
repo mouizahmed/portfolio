@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Courier New', 'Courier', 'monospace'],
-        mono: ['Courier New', 'Courier', 'monospace'],
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-inter)'],
       },
       transitionDuration: {
         600: '600ms',
@@ -20,7 +20,7 @@ module.exports = {
         },
       },
       animation: {
-        'fade-in': 'fade-in 0.5s ease-in forwards',
+        'fade-in': 'fade-in 0.6s ease-in forwards',
       },
     },
     transitionDelay: {

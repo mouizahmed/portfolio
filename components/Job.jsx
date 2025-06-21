@@ -11,7 +11,7 @@ const Job = ({ logoPath, companyName, position, timeline }) => {
             <Grid item xs={5} sm={5} md={5} lg={5} xl={5} className="flex justify-start">
                 <Grid container columns={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}>
                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1} >
-                        <h3>{companyName}</h3>
+                        <p className="font-semibold">{companyName}</p>
                     </Grid>
                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
                         <p>{position}</p>
@@ -19,7 +19,7 @@ const Job = ({ logoPath, companyName, position, timeline }) => {
                 </Grid>
             </Grid>
             <Grid item xs={3} sm={3} md={3} lg={3} xl={3} sx={{ textAlign: "right" }}>
-                <h3>{timeline}</h3>
+                <p>{timeline}</p>
             </Grid>
         </>
     )

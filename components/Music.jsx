@@ -141,7 +141,7 @@ const Music = () => {
             <div className="mt-4 dark:border-gray-700">
                 <Link href="https://open.spotify.com/user/12179232988?si=067167f98fd342ea" rel="noopener noreferrer" target="_blank">
                     <p className="text-sm text-gray-600 dark:text-gray-400 hover:text-green-500 dark:hover:text-green-400 transition-colors duration-200 cursor-pointer">
-                        Check out my Spotify and learn more about my music taste →
+                        Check out my Spotify profile!
                     </p>
                 </Link>
             </div>

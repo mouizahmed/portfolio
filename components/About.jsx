@@ -18,7 +18,7 @@ const About = () => {
             <Grid container spacing={4} columns={{ xs: 1, sm: 1, md: 12, lg: 12, xl: 12 }}>
                 <Grid item xs={1} sm={1} md={7} lg={7} xl={7}>
                     <div>
-                        <h1 className="tracking-normal typing text-4xl">Mouiz Ahmed</h1>
+                        <h1 className="tracking-normal typing">Mouiz Ahmed</h1>
                         <p>Software Engineering Student @ YorkU</p>
                     </div>
                     <div className="pt-5 dark:text-[#edede8]">
