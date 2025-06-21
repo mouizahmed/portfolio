@@ -9,19 +9,22 @@ const Projects = () => {
             <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
                 <Project
                     projectLink="https://github.com/mouizahmed/ratethatclass"
-                    title="ratethatclass.com | Course Reviews Web Application"
+                    projectName="ratethatclass.com"
+                    projectSubtitle="Course Reviews Web Application"
                     tags={["React.js (Next.js)", "Node.js", "Express.js", "Python", "PostgreSQL", "Docker"]}
                     description="A full-stack web application for students to anonymously review their classes."
                 />
                 <Project
                     projectLink="https://github.com/mouizahmed/justscribe"
-                    title="justscribe.com | Video Transcription Service (WIP)"
+                    projectName="justscribe.com"
+                    projectSubtitle="Video Transcription Service (WIP)"
                     tags={["Golang", "React.js (Next.js)", "TypeScript", "PostgreSQL", "ffmpg", "GCP", "Docker"]}
                     description="Instantly transform any video into speaker-tagged, searchable transcripts."
                 />
                 <Project
                     projectLink="https://github.com/mouizahmed/img-compressor"
-                    title="img-compressor | Quad-Tree Image Compression (WIP)"
+                    projectName="img-compressor"
+                    projectSubtitle="Quad-Tree Image Compression (WIP)"
                     tags={["Rust"]}
                     description="Fast quad-tree based image compression CLI."
                 />
