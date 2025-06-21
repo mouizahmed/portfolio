@@ -12,7 +12,7 @@ const Projects = () => {
                     projectName="ratethatclass.com"
                     projectSubtitle="Course Reviews Web Application"
                     tags={["React.js (Next.js)", "Node.js", "Express.js", "Python", "PostgreSQL", "Docker"]}
-                    description="A full-stack web application for students to anonymously review their classes."
+                    description="A full-stack web application for students to anonymously review their classes. At its peak, it had over 200+ users with over 100+ reviews."
                 />
                 <Project
                     projectLink="https://github.com/mouizahmed/justscribe"
