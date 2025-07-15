@@ -15,18 +15,18 @@ const Projects = () => {
                     description="A full-stack web application for students to anonymously review their classes. At its peak, it had over 200+ users with over 100+ reviews."
                 />
                 <Project
-                    projectLink="https://github.com/mouizahmed/usescribe"
-                    projectName="usescribe.app (WIP)"
+                    projectLink="https://github.com/mouizahmed/img-compressor"
+                    projectName="img-compressor"
+                    projectSubtitle="Quad-Tree Image Compression CLI"
+                    tags={["Rust"]}
+                    description="Fast quad-tree + prefix sum matrix based image compression CLI."
+                />
+                <Project
+                    projectLink="https://github.com/mouizahmed/writeitout"
+                    projectName="justwriteitout.com"
                     projectSubtitle="Video Transcription Service"
                     tags={["Golang", "React.js (Next.js)", "TypeScript", "PostgreSQL", "ffmpg", "GCP", "Docker"]}
                     description="Instantly transform any video into speaker-tagged, searchable transcripts."
-                />
-                <Project
-                    projectLink="https://github.com/mouizahmed/img-compressor"
-                    projectName="img-compressor (WIP)"
-                    projectSubtitle="Quad-Tree Image Compression"
-                    tags={["Rust"]}
-                    description="Fast quad-tree based image compression CLI."
                 />
                 {/* <Project
                     projectLink="https://github.com/yourusername/project3"
