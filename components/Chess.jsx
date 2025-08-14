@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { FiArrowUpRight } from 'react-icons/fi';
 
 const Chess = () => {
     const [chessStats, setChessStats] = useState(null);
@@ -64,7 +65,8 @@ const Chess = () => {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-blue-500 dark:text-blue-400 hover:opacity-75 transition-opacity text-sm"
                     >
-                        Challenge Me!
+                        <FiArrowUpRight className="w-4 h-4" />
+                        play chess with me :D
                     </Link>
                 </div>
             ) : (

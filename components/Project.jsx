@@ -17,7 +17,7 @@ const Project = ({ projectLink, projectName, projectSubtitle, tags, description 
                 <p className="text-sm italic text-gray-500 dark:text-gray-500 mt-2">{tags.join(" / ")}</p>
                 <p className="mt-2">{description}</p>
                 <Link href={projectLink} target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity">
-                    <div className="flex items-center text-sm mt-2">
+                    <div className="flex items-center text-sm mt-2 text-blue-500 dark:text-blue-400">
                         <FiArrowUpRight className="w-4 h-4" />
                         <p className="ml-1">github</p>
                     </div>

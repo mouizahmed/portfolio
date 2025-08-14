@@ -46,9 +46,6 @@ const About = () => {
                             </div>
                             <div className="w-full sm:w-auto sm:inline-flex items-center gap-2">
                                 <button onClick={email} className="group relative inline-flex items-center">
-                                    <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-gray-800 text-white dark:bg-gray-700 px-2 py-1 rounded">
-                                        {copied ? "Copied!" : "Click to copy"}
-                                    </span>
                                     <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded font-mono text-sm hover:opacity-75 transition-opacity">
                                         mouizahmed1@gmail.com
                                     </code>
