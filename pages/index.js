@@ -9,7 +9,7 @@ import Education from '../components/Education.jsx';
 import Experience from '../components/Experience.jsx';
 import Projects from '../components/Projects.jsx';
 import About from '../components/About.jsx';
-import Chess from '../components/Chess.jsx';
+import Contact from '../components/Contact.jsx';
 
 export default function Home() {
   const [dividerStates, setDividerStates] = useState({
@@ -19,7 +19,7 @@ export default function Home() {
     education: 'opacity-0',
     projects: 'opacity-0',
     music: 'opacity-0',
-    chess: 'opacity-0',
+    contact: 'opacity-0',
   });
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function Home() {
     setTimeout(() => setDividerStates(prev => ({ ...prev, education: 'opacity-100' })), 700);
     setTimeout(() => setDividerStates(prev => ({ ...prev, projects: 'opacity-100' })), 900);
     setTimeout(() => setDividerStates(prev => ({ ...prev, music: 'opacity-100' })), 1100);
-    setTimeout(() => setDividerStates(prev => ({ ...prev, chess: 'opacity-100' })), 1300);
+    setTimeout(() => setDividerStates(prev => ({ ...prev, contact: 'opacity-100' })), 1300);
   }, []);
 
   return (
@@ -68,9 +68,12 @@ export default function Home() {
             <Music />
             <Divider sx={{ borderColor: 'grey.200', opacity: 0.5, my: 3 }} />
           </div>
-          <div className={`transition-opacity duration-600 ${dividerStates.chess}`}>
-            <Chess />
+          <div className={`transition-opacity duration-600 ${dividerStates.contact}`}>
+            <Contact />
           </div>
+          {/* <div className={`transition-opacity duration-600 ${dividerStates.chess}`}>
+            <Chess />
+          </div> */}
         </div>
       </main>
 

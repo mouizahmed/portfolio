@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -5,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        mono: ['var(--font-inter)'],
+        sans: [...defaultTheme.fontFamily.sans],
+        mono: ['var(--font-ibm-plex-mono)', ...defaultTheme.fontFamily.mono],
       },
       transitionDuration: {
         600: '600ms',

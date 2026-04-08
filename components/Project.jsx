@@ -1,30 +1,29 @@
-import Link from 'next/link'
-import Grid from '@mui/material/Grid'
-import { FiArrowUpRight } from 'react-icons/fi'
+import Link from 'next/link';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 const Project = ({ projectLink, projectName, projectSubtitle, tags, description }) => {
-    return (
-        <Grid item xs={9} sm={9} md={9} lg={9} xl={9}>
-            <div className="transition-all duration-200 rounded-lg">
-                <div className="flex items-center justify-between">
-                    <div>
-                        <p className="font-semibold">{projectName}</p>
-                        {projectSubtitle && (
-                            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">{projectSubtitle}</p>
-                        )}
-                    </div>
-                </div>
-                <p className="text-sm italic text-gray-500 dark:text-gray-500 mt-2">{tags.join(" / ")}</p>
-                <p className="mt-2">{description}</p>
-                <Link href={projectLink} target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity">
-                    <div className="flex items-center text-sm mt-2 text-blue-500 dark:text-blue-400">
-                        <FiArrowUpRight className="w-4 h-4" />
-                        <p className="ml-1">github</p>
-                    </div>
-                </Link>
-            </div>
-        </Grid>
-    )
-}
+  return (
+    <article className="space-y-2">
+      <div>
+        <h4 className="type-item-title">{projectSubtitle || projectName}</h4>
+        {projectLink ? (
+          <Link
+            href={projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 inline-flex items-center gap-1 text-sm text-blue-500 transition-opacity hover:underline dark:text-blue-400"
+          >
+            {projectName}
+            <FiArrowUpRight className="h-3.5 w-3.5" />
+          </Link>
+        ) : (
+          <p className="type-item-meta mt-1">{projectName}</p>
+        )}
+      </div>
+      <p className="mt-2 text-sm italic text-gray-500 dark:text-gray-500">{tags.join(' / ')}</p>
+      <p className="type-body">{description}</p>
+    </article>
+  );
+};
 
-export default Project
+export default Project;

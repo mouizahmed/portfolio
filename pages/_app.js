@@ -1,22 +1,17 @@
 import '../styles/globals.css';
 import { ThemeProvider } from 'next-themes';
-import { Inter, Courier_Prime } from '@next/font/google';
+import { IBM_Plex_Mono } from '@next/font/google';
 
-const inter = Inter({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
-  variable: '--font-inter',
-});
-
-const courier = Courier_Prime({
-  subsets: ['latin'],
-  variable: '--font-courier',
-  weight: ['400', '700'],
+  variable: '--font-ibm-plex-mono',
+  weight: ['400'],
 });
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <main className={`${inter.variable} ${courier.variable} font-sans`}>
+      <main className={`${ibmPlexMono.variable} font-mono`}>
         <Component {...pageProps} />
       </main>
     </ThemeProvider>

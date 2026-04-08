@@ -11,7 +11,7 @@ const Current = ({ seeking, focus, logoPath, companyName, title, color, timeline
 
     return (
         <div className="pl-5 pr-5 pt-5">
-            <h3 className="pb-5">Currently</h3>
+            <h3 className="type-section mb-6">Currently</h3>
             {seeking ? (
                 <Card className="rounded-xl border-transparent border-2 hover:border-white pr-5" style={{ backgroundColor: "#4da64d" }}>
                     <CardContent>
@@ -23,7 +23,7 @@ const Current = ({ seeking, focus, logoPath, companyName, title, color, timeline
                             <Grid item xs={6} sm={6} md={6} lg={6} xl={6} className="flex justify-start">
                                 <Grid container columns={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}>
                                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1} >
-                                        <h3 className="text-[white]">Seeking Internship Positions </h3>
+                                        <h4 className="text-white">Seeking Internship Positions</h4>
                                     </Grid>
                                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
                                         <p className="text-[white]">{focus}</p>
@@ -31,7 +31,7 @@ const Current = ({ seeking, focus, logoPath, companyName, title, color, timeline
                                 </Grid>
                             </Grid>
                             <Grid item xs={3} sm={3} md={3} lg={3} xl={3} sx={{ textAlign: "right" }}>
-                                <h3 className="text-[white]">Summer/Fall 2023</h3>
+                                <h4 className="text-white">Summer/Fall 2023</h4>
                             </Grid>
                         </Grid>
                     </CardContent>
@@ -48,7 +48,7 @@ const Current = ({ seeking, focus, logoPath, companyName, title, color, timeline
                             <Grid item xs={6} sm={6} md={6} lg={6} xl={6} className="flex justify-start">
                                 <Grid container columns={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}>
                                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1} >
-                                        <h3 className="text-white dark:text-[black]">{companyName}</h3>
+                                        <h4 className="text-white dark:text-black">{companyName}</h4>
                                     </Grid>
                                     <Grid item xs={1} sm={1} md={1} lg={1} xl={1}>
                                         <p className="text-white dark:text-[black]">{title}</p>
@@ -56,7 +56,7 @@ const Current = ({ seeking, focus, logoPath, companyName, title, color, timeline
                                 </Grid>
                             </Grid>
                             <Grid item xs={3} sm={3} md={3} lg={3} xl={3} sx={{ textAlign: "right" }}>
-                                <h3 className="text-white dark:text-[black]">{timeline}</h3>
+                                <h4 className="text-white dark:text-black">{timeline}</h4>
                             </Grid>
                         </Grid>
                     </CardContent>

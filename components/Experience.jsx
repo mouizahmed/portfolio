@@ -1,19 +1,47 @@
-import React from 'react'
-import Grid from '@mui/material/Grid';
-import Job from "./Job"
+import React from 'react';
+import TimelineItem from './TimelineItem';
+
+const jobs = [
+  {
+    title: 'YU Blueprint',
+    subtitle: 'Product Engineer',
+    timeline: 'Sept 2025-Present',
+  },
+  {
+    title: 'Ericsson',
+    subtitle: 'Software Engineering Intern',
+    timeline: 'Sept 2023-Aug 2024',
+  },
+  {
+    title: 'Chatbase',
+    subtitle: 'Software Engineering Intern',
+    timeline: 'Apr 2023-Aug 2023',
+  },
+  {
+    title: 'York University',
+    subtitle: 'Teaching Assistant',
+    timeline: 'Sept 2021-Dec 2021',
+  },
+];
 
 const Experience = () => {
-    return (
-        <div>
-            <h3 className="pb-5">Where I&apos;ve been</h3>
-            <Grid container spacing={2} columns={{ xs: 9, sm: 9, md: 9, lg: 9, xl: 9 }}>
-                <Job logoPath={"/blueprint.jpg"} companyName={"YU Blueprint"} position={"Technical Project Lead"} timeline={"Sept 2025 - Present"} />
-                <Job logoPath={"/ericsson.png"} companyName={"Ericsson"} position={"5G Software Developer"} timeline={"Sept 2023 - Aug 2024"} />
-                <Job logoPath={"/chatbase.png"} companyName={"Chatbase"} position={"Software Developer"} timeline={"Apr 2023 - Aug 2023"} />
-                <Job logoPath={"/lassonde.png"} companyName={"Lassonde School of Engineering"} position={"Academic Peer Support Assistant"} timeline={"Sept 2021 - Dec 2021"} />
-            </Grid>
+  return (
+    <section>
+      <h3 className="type-section mb-6">Where I&apos;ve Been</h3>
+      <div className="flex flex-col gap-y-8">
+        <div className="flex flex-col" id="blogs">
+          {jobs.map(job => (
+            <TimelineItem
+              key={`${job.title}-${job.timeline}`}
+              title={job.title}
+              subtitle={job.subtitle}
+              timeline={job.timeline}
+            />
+          ))}
         </div>
-    )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Experience
+export default Experience;

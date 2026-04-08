@@ -15,15 +15,23 @@ const Navbar = () => {
         if (!mounted) return null
         if (currentTheme === 'dark') {
             return (
-                <div className="bg-[#4B5563] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer" onClick={() => setTheme('light')}>
+                <button
+                    type="button"
+                    className="flex h-9 w-9 items-center justify-center cursor-pointer transition-opacity hover:opacity-75"
+                    onClick={() => setTheme('light')}
+                >
                     <BsFillSunFill className="w-4 h-4 fill-white" role="button" />
-                </div>
+                </button>
             )
         } else {
             return (
-                <div className="bg-[#d5d5d1] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer" onClick={() => setTheme('dark')}>
+                <button
+                    type="button"
+                    className="flex h-9 w-9 items-center justify-center cursor-pointer transition-opacity hover:opacity-75"
+                    onClick={() => setTheme('dark')}
+                >
                     <BsFillMoonFill className="w-4 h-4 fill-black" role="button" />
-                </div>
+                </button>
             )
         }
     }
@@ -34,16 +42,28 @@ const Navbar = () => {
         if (currentTheme === 'dark') {
             return (
                 <Link href="/">
-                    <div className="bg-[#4B5563] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer ml-7">
-                        <Image src="/whitelogo.png" alt="/" width='20' height='20' className="cursor-pointer fill-white" />
+                    <div className="ml-7 flex h-9 w-9 items-center justify-center cursor-pointer transition-opacity hover:opacity-75">
+                        <Image
+                            src="/whitelogo.png"
+                            alt="/"
+                            width={187}
+                            height={171}
+                            className="h-5 w-auto cursor-pointer"
+                        />
                     </div>
                 </Link>
             )
         } else {
             return (
                 <Link href="/">
-                    <div className="bg-[#d5d5d1] h-9 w-9 rounded-lg flex items-center justify-center border-transparent border-2 hover:border-white cursor-pointer ml-7">
-                        <Image src="/logo.png" alt="/" width='50' height='50' className="cursor-pointer " />
+                    <div className="ml-7 flex h-9 w-9 items-center justify-center cursor-pointer transition-opacity hover:opacity-75">
+                        <Image
+                            src="/logo.png"
+                            alt="/"
+                            width={84}
+                            height={82}
+                            className="h-[26px] w-auto cursor-pointer"
+                        />
                     </div>
                 </Link>
             )
