@@ -7,7 +7,7 @@ const About = () => {
       <div className="flex flex-col-reverse items-start sm:flex-row">
         <div className="flex flex-col pr-0 sm:pr-8">
           <h1 className="type-display mb-1">Mouiz Ahmed</h1>
-          <h2 className="type-subtitle mb-4 mt-2">Software Engineering Student @ YorkU</h2>
+          <h2 className="type-subtitle mb-4 mt-2">SWE Student @ YorkU</h2>
           <p className="type-body mb-4">It&apos;s pronounced &apos;mo-eez&apos;!</p>
           <p className="type-body mb-4">
             I&apos;m a final year Software Engineering student at York University.

@@ -4,7 +4,7 @@ import TimelineItem from './TimelineItem';
 const jobs = [
   {
     title: 'YU Blueprint',
-    subtitle: 'Product Engineer',
+    subtitle: 'Technical Project Manager',
     timeline: 'Sept 2025-Present',
   },
   {
