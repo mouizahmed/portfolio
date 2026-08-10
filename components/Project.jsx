@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import { FiArrowUpRight } from 'react-icons/fi';
 
-const Project = ({ projectLink, projectName, projectSubtitle, tags, description }) => {
+const Project = ({
+  projectLink,
+  projectName,
+  projectSubtitle,
+  tags,
+  description,
+}) => {
   return (
     <article className="space-y-2">
       <div>

@@ -5,7 +5,8 @@ const schools = [
   {
     title: 'York University',
     subtitle: 'B.Eng Software Engineering',
-    timeline: '2020-2026 (Oct)',
+    timeline: '2020-2026',
+    timelineNote: '(Oct. expected)',
   },
 ];
 
@@ -20,6 +21,7 @@ const Education = () => {
             title={school.title}
             subtitle={school.subtitle}
             timeline={school.timeline}
+            timelineNote={school.timelineNote}
             note={school.note}
           />
         ))}

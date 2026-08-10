@@ -87,15 +87,12 @@ const Navbar = () => {
                     </div>
                     <div className="float-left">
                         <ul className="hidden md:flex px-7 items-center transition-all group-hover">
-                            <Link href="/#about">
+                            {/* <Link href="/#about">
                                 <li className="ml-5 text-sm uppercase hover:bg-[#d5d5d1] dark:hover:bg-[#1f2937] p-2 rounded-lg">About</li>
                             </Link>
                             <Link href="/#projects">
                                 <li className="ml-5 text-sm uppercase hover:bg-[#d5d5d1] dark:hover:bg-[#1f2937] p-2 rounded-lg">Projects</li>
-                            </Link>
-                            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                                <li className="ml-5 text-sm uppercase hover:bg-[#d5d5d1] dark:hover:bg-[#1f2937] p-2 rounded-lg">Resume</li>
-                            </Link>
+                            </Link> */}
                             <li className="ml-5">{renderThemeChanger()}</li>
                         </ul>
                         <div onClick={handleNav} className="md:hidden px-7">

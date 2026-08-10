@@ -1,10 +1,15 @@
-const TimelineItem = ({ title, subtitle, timeline, note }) => {
+const TimelineItem = ({ title, subtitle, timeline, timelineNote, note }) => {
   return (
     <article className="mb-4">
       <div className="sm:hidden">
         <div className="flex items-start justify-between gap-4">
           <div className="type-item-title">{title}</div>
-          <span className="type-item-meta text-right whitespace-nowrap">{timeline}</span>
+          <div className="text-right">
+            <span className="type-item-meta whitespace-nowrap">{timeline}</span>
+            {timelineNote ? (
+              <div className="type-item-meta whitespace-nowrap italic">{timelineNote}</div>
+            ) : null}
+          </div>
         </div>
         <div className="mt-1 flex items-center gap-2">
           <span className="type-item-meta">{subtitle}</span>
@@ -20,7 +25,12 @@ const TimelineItem = ({ title, subtitle, timeline, note }) => {
           </div>
         </div>
         <span className="mx-4 mb-4 hidden w-full grow shrink self-end border-t border-dashed border-gray-400 opacity-0 dark:border-gray-500 sm:block md:opacity-100" />
-        <span className="type-item-meta text-right whitespace-nowrap">{timeline}</span>
+        <div className="text-right">
+          <span className="type-item-meta whitespace-nowrap">{timeline}</span>
+          {timelineNote ? (
+            <div className="type-item-meta whitespace-nowrap italic">{timelineNote}</div>
+          ) : null}
+        </div>
       </div>
     </article>
   );

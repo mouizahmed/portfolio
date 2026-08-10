@@ -7,6 +7,13 @@ const Projects = () => {
       <h3 className="type-section mb-6">Featured Projects</h3>
       <div className="space-y-8">
         <Project
+          projectLink="https://github.com/mouizahmed/portable-cnc-machine"
+          projectName="portable-cnc-machine"
+          projectSubtitle="CNC Machine Embedded Control System"
+          tags={['C/C++', 'C#', '.NET', 'grblHAL']}
+          description="Embedded control system for a portable CNC machine using a Teensy 4.1 controller, integrating closed-loop motion control to machine aluminum within +/- 0.05 mm tolerance."
+        />
+        <Project
           projectLink="https://github.com/mouizahmed/img-compressor"
           projectName="img-compressor"
           projectSubtitle="Quad-Tree Image Compression CLI"
@@ -19,13 +26,6 @@ const Projects = () => {
           projectSubtitle="AI Meeting Notepad Desktop App"
           tags={['Electron', 'React', 'TypeScript', 'Go', 'PostgreSQL', 'Redis', 'Pinecone']}
           description="Deployed an Electron desktop meeting workspace for live transcription, collaborative notes, and AI workflows, with a Go backend for Google OAuth, WebSocket transcription, and semantic search over notes and transcripts."
-        />
-        <Project
-          projectLink="https://github.com/mouizahmed/portable-cnc-machine"
-          projectName="portable-cnc-machine"
-          projectSubtitle="CNC Machine Embedded Control System"
-          tags={['C/C++', 'C#', 'grblHAL']}
-          description="Embedded control system for a portable CNC machine across Pico 2 W and Teensy 4.1 controllers, integrating closed-loop motion control to machine aluminum within +/- 0.05 mm tolerance."
         />
         <Project
           projectLink="https://github.com/mouizahmed/ratethatclass"

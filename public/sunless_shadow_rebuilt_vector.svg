@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="200" y1="220" x2="830" y2="815" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8e5f8"/>
+      <stop offset="0.16" stop-color="#8175a8"/>
+      <stop offset="0.42" stop-color="#352d57"/>
+      <stop offset="0.72" stop-color="#120f24"/>
+      <stop offset="1" stop-color="#b59ae9"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="170" y1="250" x2="860" y2="790" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dcd6f3"/>
+      <stop offset="0.20" stop-color="#61548e"/>
+      <stop offset="0.50" stop-color="#1a1730"/>
+      <stop offset="0.84" stop-color="#5d42a7"/>
+      <stop offset="1" stop-color="#dfd8f3"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="215" y1="215" x2="805" y2="805" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0eefb"/>
+      <stop offset="0.18" stop-color="#9187b3"/>
+      <stop offset="0.45" stop-color="#2e2944"/>
+      <stop offset="0.74" stop-color="#150f28"/>
+      <stop offset="1" stop-color="#8a6ae7"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="240" y1="180" x2="815" y2="835" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ede8fb"/>
+      <stop offset="0.28" stop-color="#5f5678"/>
+      <stop offset="0.57" stop-color="#1a1727"/>
+      <stop offset="0.85" stop-color="#422d7f"/>
+      <stop offset="1" stop-color="#cbc1ee"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="200" y1="300" x2="870" y2="770" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9d4ef"/>
+      <stop offset="0.22" stop-color="#524969"/>
+      <stop offset="0.55" stop-color="#090914"/>
+      <stop offset="0.84" stop-color="#6e58b5"/>
+      <stop offset="1" stop-color="#d8d5e8"/>
+    </linearGradient>
+    <linearGradient id="g6" x1="210" y1="245" x2="842" y2="825" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6f5fc"/>
+      <stop offset="0.26" stop-color="#6a6088"/>
+      <stop offset="0.56" stop-color="#181621"/>
+      <stop offset="0.84" stop-color="#2e225c"/>
+      <stop offset="1" stop-color="#cfc6ef"/>
+    </linearGradient>
+    <filter id="soften" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.45"/>
+    </filter>
+  </defs>
+  <g filter="url(#soften)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 226 320 C 315 185, 532 165, 705 225 C 852 278, 902 430, 862 600 C 823 770, 682 853, 512 853 C 346 852, 217 764, 182 606 C 148 457, 158 394, 226 320 Z" stroke="url(#g1)" stroke-width="74" opacity="0.23"/>
+    <path d="M 278 251 C 423 167, 643 176, 765 286 C 856 369, 887 544, 816 681 C 745 818, 579 865, 431 831 C 282 798, 189 686, 177 532 C 165 382, 194 300, 278 251 Z" stroke="url(#g2)" stroke-width="82" opacity="0.22"/>
+    <path d="M 333 215 C 486 168, 680 216, 779 326 C 871 429, 873 609, 782 722 C 688 839, 507 883, 359 827 C 223 776, 158 622, 188 477 C 218 335, 250 240, 333 215 Z" stroke="url(#g3)" stroke-width="78" opacity="0.18"/>
+    <path d="M 390 187 C 548 180, 726 265, 806 395 C 881 517, 847 700, 729 797 C 613 892, 432 889, 313 800 C 197 713, 146 548, 199 412 C 251 278, 306 191, 390 187 Z" stroke="url(#g4)" stroke-width="84" opacity="0.16"/>
+    <path d="M 246 389 C 270 248, 416 174, 574 199 C 726 223, 853 344, 877 494 C 901 648, 823 797, 680 848 C 536 900, 336 875, 235 754 C 142 642, 221 534, 246 389 Z" stroke="url(#g5)" stroke-width="90" opacity="0.13"/>
+    <path d="M 203 465 C 185 313, 300 213, 467 190 C 632 168, 795 257, 853 396 C 911 536, 870 727, 754 810 C 640 891, 461 883, 321 815 C 174 744, 221 614, 203 465 Z" stroke="url(#g6)" stroke-width="68" opacity="0.12"/>
+    <path d="M 260 337 C 357 222, 556 205, 700 276 C 830 341, 896 489, 866 622 C 832 772, 691 851, 539 840 C 382 829, 261 742, 224 605 C 188 472, 196 412, 260 337 Z" stroke="#0f0d1d" stroke-width="56" opacity="0.22"/>
+    <path d="M 294 356 C 389 252, 558 234, 678 286 C 792 336, 862 447, 847 591 C 833 722, 714 809, 574 819 C 423 829, 300 766, 249 645 C 196 521, 224 433, 294 356 Z" stroke="#201939" stroke-width="34" opacity="0.16"/>
+  </g>
+</svg>

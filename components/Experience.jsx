@@ -3,11 +3,6 @@ import TimelineItem from './TimelineItem';
 
 const jobs = [
   {
-    title: 'YU Blueprint',
-    subtitle: 'Technical Project Manager',
-    timeline: 'Sept 2025-Present',
-  },
-  {
     title: 'Ericsson',
     subtitle: 'Software Engineering Intern',
     timeline: 'Sept 2023-Aug 2024',

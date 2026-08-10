@@ -42,8 +42,8 @@
 % ---------- LIST SPACING (tight + consistent) ----------
 \setlist[itemize]{
   leftmargin=0.18in,
-  topsep=2pt,
-  itemsep=1pt,
+  topsep=1pt,
+  itemsep=0pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -55,7 +55,7 @@
   label={},
   leftmargin=0pt,
   topsep=0pt,
-  itemsep=5pt,
+  itemsep=4pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -65,7 +65,7 @@
   {\fontsize{10.5pt}{10.5pt}\selectfont\bfseries\color{muted}}
   {}{0pt}{}
   [\vspace{1pt}\color{rulec}\titlerule\vspace{-1pt}]
-\titlespacing*{\section}{0pt}{10pt}{3pt}
+\titlespacing*{\section}{0pt}{7pt}{2pt}
 
 % ---------- RESUME HELPERS ----------
 \newcommand{\resumeItem}[1]{\item{\fontsize{10pt}{11pt}\selectfont #1}}
@@ -79,13 +79,13 @@
 % ---------- HEADING MACROS (no jittery negative vspace) ----------
 \newcommand{\educationHeading}[4]{%
   \item
-  {\textbf{\color{accent}#1}\hfill {\small #2}\par}
+  {\textbf{#1}\hfill {\small #2}\par}
   {{\textit{\small #3}}\hfill {\textit{\small #4}}\par}
 }
 
 \newcommand{\experienceHeading}[4]{%
   \item
-  {\textbf{\color{accent}#1}\hfill {\small #2}\par}
+  {\textbf{#1}\hfill {\small #2}\par}
   {{\textbf{#3}}\hfill {\textit{\small #4}}\par}
 }
 
@@ -111,31 +111,15 @@
 }
 \vspace{-1pt}
 
-%----------- EDUCATION -----------
-\section{EDUCATION}
-\resumeSubHeadingListStart
-  \educationHeading
-    {York University - Lassonde School of Engineering}{Toronto, Canada}
-    {Bachelor of Engineering, Software Engineering}{Sept 2020 -- Oct 2026 (Expected)}
-\resumeSubHeadingListEnd
-
 %----------- EXPERIENCE -----------
 \section{EXPERIENCE}
 \resumeSubHeadingListStart
   \experienceHeading
-    {Technical Project Manager}{Sept 2025 -- Present}
-    {YU Blueprint}{Toronto, ON}
-  \resumeItemListStart
-    \resumeItem{Defined system architecture and technical scope for a scam-awareness training platform for seniors in partnership with Gal Senior Care Foundation}
-    \resumeItem{Led engineering execution for the platform roadmap, translating requirements into tasks and milestones}
-  \resumeItemListEnd
-
-  \experienceHeading
     {Software Engineering Intern}{Sept 2023 -- Aug 2024}
     {Ericsson}{Ottawa, ON}
   \resumeItemListStart
-    \resumeItem{Built a \textbf{Python} automation system to manage cell and sector activity on \textbf{5G} network nodes, powering down radios during off-peak hours and \textbf{cutting energy use 30\%}}
-    \resumeItem{Delivered an internal \textbf{React/Grafana/Python} analytics platform that automated CLI workflows on radio-tower nodes and sped network troubleshooting}
+    \resumeItem{Automated cell and sector activity management for \textbf{5G} network nodes with \textbf{Python}, powering down radios during off-peak hours and \textbf{cutting energy use 30\%}}
+    \resumeItem{Delivered an internal \textbf{React/Grafana/Python} analytics platform that automated radio-node CLI workflows and accelerated network troubleshooting}
     \resumeItem{Migrated test automation to a new framework and authored \textbf{25+ JUnit tests}, reducing execution time by \textbf{25\%} and improving release throughput}
   \resumeItemListEnd
 
@@ -143,17 +127,23 @@
     {Software Engineering Intern}{Apr 2023 -- Aug 2023}
     {Chatbase}{Toronto, ON}
   \resumeItemListStart
-    \resumeItem{Built a \textbf{React} support portal with Zendesk API integration, reducing ticket resolution time by \textbf{50\%}}
-    \resumeItem{Implemented CSV/JSON export workflows for chatbot conversation logs and analytics, improving \textbf{QA, debugging, and customer reporting}}
+    \resumeItem{Developed a \textbf{React} support portal integrated with the Zendesk API, reducing ticket resolution time by \textbf{50\%}}
+    \resumeItem{Launched CSV/JSON export workflows for chatbot conversations and analytics, improving \textbf{QA, debugging, and customer reporting}}
     \resumeItem{Shipped production integrations for \textbf{Shopify, Facebook, and Wix}, expanding chatbot deployment across commerce and social channels}
-    \resumeItem{Standardized API docs and authentication flows, improving onboarding and integration consistency}
+  \resumeItemListEnd
+
+  \experienceHeading
+    {Technical Project Manager}{Sept 2025 -- Present}
+    {YU Blueprint}{Toronto, ON}
+  \resumeItemListStart
+    \resumeItem{Defined architecture and led engineering execution for a scam-awareness training platform for seniors in partnership with Gal Senior Care Foundation}
   \resumeItemListEnd
 
   \experienceHeading
     {Teaching Assistant}{Sept 2021 -- Dec 2021}
     {York University - Lassonde School of Engineering}{Toronto, ON}
   \resumeItemListStart
-    \resumeItem{Held weekly office hours and tutorials for ENG 1101, supporting first-year students on coursework and assignments}
+    \resumeItem{Facilitated weekly ENG 1101 tutorials and office hours, helping first-year engineering students debug assignments and design decisions}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -166,30 +156,30 @@
     {\href{https://github.com/mouizahmed/ratethatclass}{Course Reviews Web Application}}
     {Next.js, React, Node.js, Express, Python, PostgreSQL, Docker}
   \resumeItemListStart
-    \resumeItem{Deployed a \textbf{full-stack course reviews platform} for anonymous class reviews, reaching \textbf{200+ users and 100+ reviews} at peak usage}
-    \resumeItem{Developed a \textbf{multithreaded Python scraper} to ingest \textbf{10,000+ course records} across Ontario universities for fast structured search}
+    \resumeItem{Launched a \textbf{full-stack course reviews platform} for anonymous class feedback, reaching \textbf{200+ users and 100+ reviews} at peak usage}
+    \resumeItem{Engineered a \textbf{multithreaded Python scraper} that ingested \textbf{10,000+ course records} across Ontario universities for fast structured search}
   \resumeItemListEnd
 
   \projectHeading
     {\href{https://github.com/mouizahmed/img-compressor}{Quad-Tree Image Compression CLI Tool}}
     {Rust}
   \resumeItemListStart
-    \resumeItem{Built a \textbf{Rust} CLI for quad-tree image compression with \textbf{O(1)} variance queries, scaling to \textbf{6k x 9k images} across \textbf{100k iterations in 7.6s}}
+    \resumeItem{Optimized a \textbf{Rust} quad-tree compression CLI with \textbf{O(1)} variance queries, processing \textbf{6k x 9k images} across \textbf{100k iterations in 7.6s}}
   \resumeItemListEnd
 
   \projectHeading
     {\href{https://github.com/mouizahmed/sunless}{AI Meeting Notepad Desktop Application}}
     {Electron, React, TypeScript, Go, PostgreSQL, Redis, Pinecone}
   \resumeItemListStart
-    \resumeItem{Deployed an \textbf{Electron} desktop meeting workspace for live transcription, collaborative notes, and AI workflows}
-    \resumeItem{Implemented a \textbf{Go} backend with Google OAuth, WebSocket transcription, and Pinecone-backed \textbf{semantic search} over notes and transcripts}
+    \resumeItem{Created an \textbf{Electron} meeting workspace that unified live transcription, collaborative notes, and AI-assisted workflows}
+    \resumeItem{Architected a \textbf{Go} backend with Google OAuth, WebSocket transcription, and Pinecone-backed \textbf{semantic search} across notes and transcripts}
   \resumeItemListEnd
 
   \projectHeading
     {\href{https://github.com/mouizahmed/portable-cnc-machine}{CNC Machine Embedded Control System}}
     {C/C++, C\#, grblHAL}
   \resumeItemListStart
-    \resumeItem{Built the embedded control system for a portable CNC machine across \textbf{Pico 2 W} and \textbf{Teensy 4.1} controllers, integrating closed-loop motion control to machine aluminum within \textbf{\(\pm 0.05\) mm} tolerance}
+    \resumeItem{Programmed the embedded control system for a portable CNC machine across \textbf{Pico 2 W} and \textbf{Teensy 4.1} controllers, integrating closed-loop motion control to machine aluminum within \textbf{\(\pm 0.05\) mm} tolerance}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -203,5 +193,13 @@
     \textbf{Tools}: Docker, Linux, PostgreSQL, Git, Redis, AWS, Jira, Jenkins, Maven, Gradle
   }
 \end{itemize}
+
+%----------- EDUCATION -----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+  \educationHeading
+    {York University - Lassonde School of Engineering}{Toronto, Canada}
+    {Bachelor of Engineering, Software Engineering}{Sept 2020 -- Oct 2026 (Expected)}
+\resumeSubHeadingListEnd
 
 \end{document}
