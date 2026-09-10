@@ -17,8 +17,8 @@ const Projects = () => {
           projectLink="https://github.com/mouizahmed/portable-cnc-machine"
           projectName="portable-cnc-machine"
           projectSubtitle="CNC Machine Embedded Control System"
-          tags={['C/C++', 'C#', '.NET', 'grblHAL']}
-          description="Embedded control system for a portable CNC machine using a Teensy 4.1 controller, integrating closed-loop motion control to machine aluminum within +/- 0.05 mm tolerance."
+          tags={['C/C++', 'C#', '.NET', 'Avalonia', 'KiCad', 'grblHAL']}
+          description="Led electronics and software development for a portable CNC machine achieving ±0.05 mm accuracy in aluminum. Built Teensy 4.1 motion-control firmware, an Avalonia/.NET app for 3D toolpath visualization and machine control, a custom controller PCB, and enclosure wiring."
         />
         <Project
           projectLink="https://github.com/mouizahmed/img-compressor"
@@ -28,11 +28,11 @@ const Projects = () => {
           description="Rust CLI for quad-tree image compression with O(1) variance queries, scaling to 6k x 9k images across 100k iterations in 7.6s."
         />
         <Project
-          projectLink="https://github.com/mouizahmed/orion"
-          projectName="orion"
-          projectSubtitle="Cross-Platform AI Meeting Intelligence"
-          tags={['Electron', 'React', 'TypeScript', 'Go', 'PostgreSQL', 'Redis', 'Pinecone']}
-          description="Deployed an Electron desktop meeting workspace for live transcription, meeting notes, and AI workflows, with a Go backend for Google OAuth, WebSocket transcription, and semantic search over notes and transcripts."
+          projectLink="https://github.com/mouizahmed/ratethatclass"
+          projectName="ratethatclass.com"
+          projectSubtitle="Course Reviews Web Application"
+          tags={['Next.js', 'React', 'Node.js', 'Express', 'Python', 'PostgreSQL', 'Docker']}
+          description="Deployed a full-stack course reviews platform for anonymous class reviews, reaching 200+ users and 100+ reviews at peak usage. Built 11 university-specific scrapers, normalizing 60,038 courses across inconsistent catalog schemas into a unified searchable dataset."
         />
       </div>
     </section>
