@@ -6,18 +6,18 @@ const Project = ({
   projectName,
   projectSubtitle,
   tags,
-  description,
+    description,
 }) => {
   return (
     <article className="space-y-2">
-      <div>
+      <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
         <h4 className="type-item-title">{projectSubtitle || projectName}</h4>
         {projectLink ? (
           <Link
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-1 inline-flex items-center gap-1 text-sm text-blue-500 transition-opacity hover:underline dark:text-blue-400"
+            className="inline-flex shrink-0 items-center gap-1 text-[13px] text-violet-700 transition-opacity hover:underline dark:text-violet-400"
           >
             {projectName}
             <FiArrowUpRight className="h-3.5 w-3.5" />
