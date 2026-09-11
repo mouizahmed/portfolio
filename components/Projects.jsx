@@ -32,7 +32,7 @@ const Projects = () => {
           projectName="ratethatclass.com"
           projectSubtitle="Course Reviews Web Application"
           tags={['Next.js', 'React', 'Node.js', 'Express', 'Python', 'PostgreSQL', 'Docker']}
-          description="Deployed a full-stack course reviews platform for anonymous class reviews, reaching 200+ users and 100+ reviews at peak usage. Built 11 university-specific scrapers, normalizing 60,038 courses across inconsistent catalog schemas into a unified searchable dataset."
+          description="Built and deployed an anonymous course review platform with course search, detailed ratings, community voting, and admin moderation. Developed 11 university-specific scrapers to normalize 60,038 courses into a searchable PostgreSQL database."
         />
       </div>
     </section>
