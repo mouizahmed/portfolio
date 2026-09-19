@@ -9,16 +9,16 @@ const Projects = () => {
         <Project
           projectLink="https://github.com/mouizahmed/sshstate"
           projectName="sshstate"
-          projectSubtitle="Encrypted SSH Environment Synchronization"
-          tags={['Go', 'Cryptography', 'Distributed Systems', 'CLI', 'Docker']}
-          description="In progress: a CLI-first, self-hostable vault that securely synchronizes SSH hosts, keys, known_hosts, and topology across machines while remaining compatible with native OpenSSH."
+          projectSubtitle="SSH Environment Manager"
+          tags={['Go', 'OpenSSH', 'SQLite', 'Cryptography', 'Docker']}
+          description="Released an open-source Go CLI for managing SSH hosts, connection options, keys, and trusted host keys across macOS and Linux. An optional self-hosted relay syncs the environment with client-side encryption and explicit conflict review. An encrypted local vault and SSH agent keep managed private keys off disk in plaintext while OpenSSH handles connections."
         />
         <Project
           projectLink="https://github.com/mouizahmed/portable-cnc-machine"
           projectName="portable-cnc-machine"
-          projectSubtitle="CNC Machine Embedded Control System"
+          projectSubtitle="CNC Machine Embedded Control System (In Progress)"
           tags={['C/C++', 'C#', '.NET', 'Avalonia', 'KiCad', 'grblHAL']}
-          description="Led electronics and software development for a portable CNC machine achieving ±0.05 mm accuracy in aluminum. Built Teensy 4.1 motion-control firmware, an Avalonia/.NET app for 3D toolpath visualization and machine control, a custom controller PCB, and enclosure wiring."
+          description="Designed for aluminum machining with a target accuracy of ±0.05 mm, this portable CNC machine pairs Teensy 4.1 firmware extending grblHAL for SD-card G-code streaming and position verification with an Avalonia/.NET control app and OpenGL toolpath preview. Its fabricated enclosure is designed to house a custom controller PCB, power distribution, motor and spindle controls, and emergency-stop circuitry."
         />
         <Project
           projectLink="https://github.com/mouizahmed/img-compressor"
@@ -32,7 +32,7 @@ const Projects = () => {
           projectName="ratethatclass.com"
           projectSubtitle="Course Reviews Web Application"
           tags={['Next.js', 'React', 'Node.js', 'Express', 'Python', 'PostgreSQL', 'Docker']}
-          description="Built and deployed an anonymous course review platform with course search, detailed ratings, community voting, and admin moderation. Developed 11 university-specific scrapers to normalize 60,038 courses into a searchable PostgreSQL database."
+          description="Launched an anonymous course review platform with course search, detailed ratings, community voting, and admin moderation. Developed 11 university-specific scrapers to normalize 60,038 courses into a searchable PostgreSQL database."
         />
       </div>
     </section>
