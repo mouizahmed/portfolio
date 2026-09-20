@@ -18,7 +18,7 @@ const Projects = () => {
           projectName="portable-cnc-machine"
           projectSubtitle="CNC Machine Embedded Control System (In Progress)"
           tags={['C/C++', 'C#', '.NET', 'Avalonia', 'KiCad', 'grblHAL']}
-          description="Designed for aluminum machining with a target accuracy of ±0.05 mm, this portable CNC machine pairs Teensy 4.1 firmware extending grblHAL for SD-card G-code streaming and position verification with an Avalonia/.NET control app and OpenGL toolpath preview. Its fabricated enclosure is designed to house a custom controller PCB, power distribution, motor and spindle controls, and emergency-stop circuitry."
+          description="A modular, portable CNC mill intended to let remote First Nations communities fabricate replacement parts locally, targeting ±0.05 mm accuracy in aluminum. Its Teensy 4.1 firmware extends grblHAL with SD-card G-code streaming and position verification; an Avalonia/.NET app provides OpenGL toolpath preview and machine control. The fabricated control enclosure is designed to house power distribution, motor and spindle controls, and emergency-stop circuitry."
         />
         <Project
           projectLink="https://github.com/mouizahmed/img-compressor"
