@@ -7,18 +7,18 @@ const Projects = () => {
       <h3 className="type-section mb-4">Featured Projects</h3>
       <div className="space-y-8">
         <Project
+          projectLink="https://github.com/mouizahmed/continuumFS"
+          projectName="continuumFS"
+          projectSubtitle="Branchable Cloud Filesystem"
+          tags={['Rust', 'FUSE', 'S3', 'Cloudflare R2']}
+          description="Released an open-source Linux filesystem that gives whole workspaces Git-style branches, storing file data, directories, and history as immutable, content-addressed objects in an S3-compatible bucket with no metadata server or database. Forking a branch of any size takes a single request, reads lazily fetch only the chunks touched, and edits to large files upload only the changed chunks. Mounts on different machines coordinate through S3 conditional writes and follow their branch within seconds."
+        />
+        <Project
           projectLink="https://github.com/mouizahmed/sshstate"
           projectName="sshstate"
           projectSubtitle="SSH Environment Manager"
           tags={['Go', 'OpenSSH', 'SQLite', 'Cryptography', 'Docker']}
           description="Released an open-source Go CLI for managing SSH hosts, connection options, keys, and trusted host keys across macOS and Linux. An optional self-hosted relay syncs the environment with client-side encryption and explicit conflict review. An encrypted local vault and SSH agent keep managed private keys off disk in plaintext while OpenSSH handles connections."
-        />
-        <Project
-          projectLink="https://github.com/mouizahmed/portable-cnc-machine"
-          projectName="portable-cnc-machine"
-          projectSubtitle="CNC Machine Embedded Control System (In Progress)"
-          tags={['C/C++', 'C#', '.NET', 'Avalonia', 'KiCad', 'grblHAL']}
-          description="A modular, portable CNC mill intended to let remote First Nations communities fabricate replacement parts locally, targeting ±0.05 mm accuracy in aluminum. Designed to operate offline, it uses a Teensy 4.1 controller that extends grblHAL to run G-code from an SD card and verify axis position, while an Avalonia/.NET app lets operators preview toolpaths in OpenGL and control the mill. Its fabricated electronics enclosure will house the power, motor, spindle, and emergency-stop systems."
         />
         <Project
           projectLink="https://github.com/mouizahmed/img-compressor"
